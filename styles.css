@@ -2264,24 +2264,107 @@ button { cursor: none; border: none; background: none; }
 }
 
 /* ── Responsive ── */
-@media (max-width: 1024px) {
-    .vweb-types { grid-template-columns: repeat(2, 1fr); }
-    .vweb-plans { grid-template-columns: 1fr; max-width: 500px; margin-left: auto; margin-right: auto; }
-    .vweb-plan--featured { transform: none; }
-    .vweb-portal { flex-direction: column; align-items: flex-start; }
-    .vweb-steps { flex-direction: column; gap: 32px; }
-    .vweb-step-arrow { display: none; }
-    .vweb-step { padding: 0; }
+```css
+/* ── Responsive ── */
+@media (max-width: 1200px) {
+
+    .vweb-types {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vweb-plans {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .vweb-plan--featured {
+        transform: translateY(-8px);
+    }
+
+    .vweb-portal {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .vweb-steps {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .vweb-step-arrow {
+        display: none;
+    }
+
+    .vweb-step {
+        padding: 0;
+    }
 }
 
 @media (max-width: 768px) {
-    .vweb-types { grid-template-columns: 1fr 1fr; }
-    .vweb-portal-left { flex-direction: column; gap: 16px; }
-    .vweb-portal { padding: 28px 24px; }
+
+    .vweb-types {
+        grid-template-columns: 1fr;
+    }
+
+    .vweb-plans {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .vweb-plan {
+        padding: 32px 24px;
+    }
+
+    .vweb-plan--featured {
+        transform: none;
+    }
+
+    .vweb-portal-left {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .vweb-portal {
+        padding: 28px 24px;
+    }
+
+    .vweb-plan-price {
+        justify-content: flex-start;
+    }
+
+    .vwp-val {
+        font-size: 42px;
+    }
 }
 
 @media (max-width: 480px) {
-    .vweb-types { grid-template-columns: 1fr; }
-    .vweb-plans { max-width: 100%; }
-    .vweb-type { padding: 24px 20px; }
+
+    .vweb-type {
+        padding: 24px 20px;
+    }
+
+    .vweb-plan {
+        padding: 28px 20px;
+        border-radius: 20px;
+    }
+
+    .vweb-plan-head {
+        margin-bottom: 20px;
+    }
+
+    .vwp-val {
+        font-size: 36px;
+    }
+
+    .vweb-plan-items li {
+        font-size: 13px;
+    }
+
+    .vweb-plan-btn {
+        width: 100%;
+    }
 }
+```
+

@@ -4,1031 +4,467 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VISUAL Group — Donde todo entra por los ojos</title>
-    <meta name="description" content="Agencia creativa y digital especializada en branding, audiovisual, marketing digital y desarrollo web. Lima, Perú.">
-    <meta property="og:title" content="VISUAL Group — Donde todo entra por los ojos">
-    <meta property="og:description" content="Construimos marcas que entran por los ojos.">
+    <meta name="description" content="Agencia creativa y digital especializada en branding, audiovisual, redes sociales y desarrollo web. Lima, Perú.">
     <link rel="icon" type="image/png" href="logo_visual.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="is-loading">
 
-<!-- CUSTOM CURSOR -->
-<div class="cursor" id="cursor"></div>
-<div class="cursor-dot" id="cursor-dot"></div>
+<!-- ═══ PRELOADER ═══ -->
+<div class="preloader" id="preloader">
+    <div class="pl-stage">
+        <!-- orbiting icons -->
+        <span class="pl-ico pl-ico--ig" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <span class="pl-ico pl-ico--fb" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3l.5-3H14V4.5c0-.9.3-1.5 1.6-1.5H17V.2C16.7.1 15.7 0 14.6 0 12.1 0 10.5 1.5 10.5 4.3V6H8v3h2.5v9H14z"/></svg>
+        </span>
+        <span class="pl-ico pl-ico--wa" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.6.2s-.7.9-.9 1.1c-.2.2-.3.2-.6.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.7-1.3.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.9-2-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 5 4.3 1.8.8 2.5.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+        </span>
+        <span class="pl-ico pl-ico--code" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </span>
+        <span class="pl-ico pl-ico--rocket" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2 0-2.8a2 2 0 0 0-3 0z"/><path d="M12 15l-3-3a22 22 0 0 1 8-10c2 0 4 2 4 4a22 22 0 0 1-9 9z"/><path d="M9 12H4s.5-2.8 2-4c1.7-1.3 5 0 5 0"/><path d="M12 15v5s2.8-.5 4-2c1.3-1.7 0-5 0-5"/></svg>
+        </span>
 
-<!-- LOADER -->
-<div class="loader" id="loader">
-    <div class="loader-content">
-        <div class="loader-logo-wrap">
-            <div class="loader-word" id="loader-visual">
-                <span>V</span><span>I</span><span>S</span><span>U</span><span>A</span><span>L</span>
-            </div>
-            <div class="loader-sep" id="loader-sep"></div>
-            <div class="loader-word loader-word--group" id="loader-group">
-                <span>G</span><span>R</span><span>O</span><span>U</span><span>P</span>
+        <!-- phone -->
+        <div class="pl-phone">
+            <span class="pl-notch"></span>
+            <div class="pl-screen">
+                <div class="pl-feed">
+                    <div class="pl-post"><span class="pl-post-av"></span><span class="pl-post-lines"><i></i><i></i></span></div>
+                    <div class="pl-post pl-post--img pl-g1"></div>
+                    <div class="pl-post"><span class="pl-post-av"></span><span class="pl-post-lines"><i></i><i></i></span></div>
+                    <div class="pl-post pl-post--img pl-g2"></div>
+                    <div class="pl-post"><span class="pl-post-av"></span><span class="pl-post-lines"><i></i><i></i></span></div>
+                    <div class="pl-post pl-post--img pl-g3"></div>
+                    <!-- duplicate for seamless loop -->
+                    <div class="pl-post"><span class="pl-post-av"></span><span class="pl-post-lines"><i></i><i></i></span></div>
+                    <div class="pl-post pl-post--img pl-g1"></div>
+                    <div class="pl-post"><span class="pl-post-av"></span><span class="pl-post-lines"><i></i><i></i></span></div>
+                    <div class="pl-post pl-post--img pl-g2"></div>
+                </div>
+                <div class="pl-browserbar"><span class="pl-dot"></span>visualgroup.net</div>
             </div>
         </div>
-        <p class="loader-tagline" id="loader-tagline">Donde todo entra por los <em>ojos.</em></p>
-        <div class="loader-bar-wrap">
-            <div class="loader-bar" id="loader-bar"></div>
-        </div>
-        <span class="loader-counter" id="loader-counter">0</span>
     </div>
-    <div class="loader-particles" id="loader-particles"></div>
+
+    <img src="logo_visual.png" alt="VISUAL Group" class="pl-logo">
+    <div class="pl-progress"><span class="pl-progress-fill"></span></div>
+    <p class="pl-caption">Desplegando tu presencia digital</p>
 </div>
 
-<!-- NAVIGATION -->
-<nav class="navbar" id="navbar">
-    <div class="nav-inner">
-        <a href="#inicio" class="nav-logo">
-            <img src="logo_visual.png" alt="VISUAL Group" class="nav-logo-img">
-        </a>
-        <div class="nav-links" id="nav-links">
-            <a href="#inicio" class="nav-link">Inicio</a>
-            <a href="#servicios" class="nav-link">Servicios</a>
-            <a href="#web-dev" class="nav-link">Web</a>
-            <a href="#portafolio-web" target="_blank" rel="noopener" class="nav-link">Portafolio Web</a>
-            <a href="#portafolio-redes" target="_blank" rel="noopener" class="nav-link">Portafolio Redes</a>
-            <a href="#proceso" class="nav-link">Proceso</a>
-            <a href="#paquetes" class="nav-link">Paquetes</a>
-            <a href="#contacto" class="nav-link">Contacto</a>
-        </div>
-        <div class="nav-actions">
-            <a href="#contacto" class="btn-nav magnetic">Agendar reunión</a>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </div>
-</nav>
-
-<!-- Mobile Menu -->
+<!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobile-menu">
     <button class="mobile-close" id="mobile-close" aria-label="Cerrar">✕</button>
-    <div class="mobile-links">
-        <a href="#inicio" class="mobile-link">Inicio</a>
+    <nav class="mobile-nav">
         <a href="#servicios" class="mobile-link">Servicios</a>
-        <a href="#web-dev" class="mobile-link">Web</a>
-        <a href="#portafolio-web" target="_blank" rel="noopener" class="mobile-link">Portafolio Web</a>
-        <a href="#portafolio-redes" target="_blank" rel="noopener" class="mobile-link">Portafolio Redes</a>
-        <a href="#proceso" class="mobile-link">Proceso</a>
+        <a href="#portafolio" class="mobile-link">Portafolio</a>
         <a href="#paquetes" class="mobile-link">Paquetes</a>
         <a href="#contacto" class="mobile-link">Contacto</a>
-    </div>
-    <a href="#contacto" class="btn-primary mobile-cta">Agendar reunión</a>
-    <p class="mobile-footer-text">administracion@visualgroup.net</p>
+    </nav>
+    <a href="https://wa.me/51981218584?text=Hola%2C%20me%20comunico%20desde%20visualgroup.net.%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20VISUAL%20Group." target="_blank" rel="noopener" class="mobile-wa-btn">WhatsApp</a>
 </div>
 
-<!-- ═══════════════════════════════════
-     1. HERO
-═══════════════════════════════════ -->
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+    <a href="#inicio" class="nav-logo">
+        <img src="logo_visual.png" alt="VISUAL Group" class="nav-logo-img">
+    </a>
+    <nav class="nav-links" id="nav-links">
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#portafolio" class="nav-link">Portafolio</a>
+        <a href="#paquetes" class="nav-link">Paquetes</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+    </nav>
+    <div class="nav-actions">
+        <a href="https://wa.me/51981218584?text=Hola%2C%20me%20comunico%20desde%20visualgroup.net.%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20VISUAL%20Group." target="_blank" rel="noopener" class="btn-wa-nav">WhatsApp</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<!-- ═══ 1. HERO ═══ -->
 <section class="hero" id="inicio">
     <div class="hero-bg">
-        <video class="hero-bg-img" id="hero-bg-img"
-               autoplay muted loop playsinline
-               poster="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1920&q=80&fit=crop&auto=format">
-            <source src="https://videos.pexels.com/video-files/3256542/3256542-hd_1920_1080_24fps.mp4" type="video/mp4">
-            <source src="https://videos.pexels.com/video-files/1918465/1918465-hd_1920_1080_30fps.mp4" type="video/mp4">
+        <video class="hero-bg-video" id="hero-video" autoplay muted loop playsinline preload="auto"
+               poster="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=85">
+            <source src="hero_video.mp4" type="video/mp4">
         </video>
         <div class="hero-overlay"></div>
     </div>
-    <div class="hero-orb hero-orb--1"></div>
-    <div class="hero-orb hero-orb--2"></div>
-    <div class="hero-orb hero-orb--3"></div>
-
     <div class="hero-content">
-        <div class="hero-eyebrow reveal-up">
-            <span class="eyebrow-dot"></span>
-            Agencia Creativa &amp; Digital &nbsp;·&nbsp; Lima, Perú
-        </div>
-        <h1 class="hero-headline">
-            <span class="reveal-line">CONSTRUIMOS</span>
-            <span class="reveal-line">MARCAS QUE</span>
-            <span class="reveal-line hero-line--ojos">
-                ENTRAN POR LOS
-                <span class="word-ojos" id="word-ojos">
-                    <span class="ojos-text">OJOS</span>
-                    <span class="ojos-glow"></span>
-                </span>
-            </span>
+        <p class="hero-label reveal">Lima, Perú · Agencia Creativa &amp; Digital</p>
+        <h1 class="hero-title reveal">
+            Donde todo<br>entra por los<br><span class="accent-gold">ojos.</span>
         </h1>
-        <p class="hero-sub reveal-up">
-            Comunicación &nbsp;·&nbsp; Audiovisual &nbsp;·&nbsp; Branding &nbsp;·&nbsp; Experiencias Digitales
-        </p>
-        <div class="hero-ctas reveal-up">
-            <a href="#contacto" class="btn-primary magnetic">
-                <span>Agendar reunión</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="#portafolio" class="btn-ghost magnetic">
-                <span>Ver portafolio</span>
-            </a>
-        </div>
-
-        <div class="hero-chips reveal-up">
-            <div class="hero-chip">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="17" y1="7" x2="22" y2="7"/></svg>
-                Audiovisual
-            </div>
-            <div class="hero-chip">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                Desarrollo Web
-            </div>
-            <div class="hero-chip hero-chip--gold">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-                Branding
-            </div>
-            <div class="hero-chip">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-                Social Media
-            </div>
-            <div class="hero-chip">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                Eventos
-            </div>
+        <div class="hero-ctas reveal">
+            <a href="#contacto" class="btn-primary">Agendar reunión</a>
+            <a href="#servicios" class="btn-ghost">Ver servicios</a>
         </div>
     </div>
-
-    <div class="hero-scroll-ind">
-        <div class="scroll-line-anim"></div>
+    <a href="#servicios" class="hero-scroll-hint" aria-label="Bajar">
+        <div class="scroll-line"></div>
         <span>Scroll</span>
-    </div>
-
-    <!-- Marquee con íconos -->
-    <div class="hero-marquee">
-        <div class="marquee-track">
-            <span class="mq-item"><svg class="mq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Branding</span>
-            <span class="mdot">✦</span>
-            <span class="mq-item"><svg class="mq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/></svg>Audiovisual</span>
-            <span class="mdot">✦</span>
-            <span class="mq-item"><svg class="mq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Redes Sociales</span>
-            <span class="mdot">✦</span>
-            <span class="mq-item"><svg class="mq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Desarrollo Web</span>
-            <span class="mdot">✦</span>
-            <span class="mq-item"><svg class="mq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Eventos</span>
-            <span class="mdot">✦</span>
-            <span class="mq-item"><svg class="mq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>SEO</span>
-            <span class="mdot">✦</span>
-            <span class="mq-item"><svg class="mq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>Automatización</span>
-            <span class="mdot">✦</span>
-            <span class="mq-item"><svg class="mq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>Branding</span>
-            <span class="mdot">✦</span>
-            <span class="mq-item"><svg class="mq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/></svg>Audiovisual</span>
-            <span class="mdot">✦</span>
-            <span class="mq-item"><svg class="mq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>Redes Sociales</span>
-            <span class="mdot">✦</span>
-            <span class="mq-item"><svg class="mq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Desarrollo Web</span>
-            <span class="mdot">✦</span>
-            <span class="mq-item"><svg class="mq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Eventos</span>
-            <span class="mdot">✦</span>
-            <span class="mq-item"><svg class="mq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>SEO</span>
-            <span class="mdot">✦</span>
-            <span class="mq-item"><svg class="mq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>Automatización</span>
-        </div>
-    </div>
+    </a>
 </section>
 
-<!-- ═══════════════════════════════════
-     2. MANIFESTO
-═══════════════════════════════════ -->
-<section class="manifesto">
-    <div class="manifesto-inner">
-        <p class="manifesto-line" data-manifesto>Las marcas ya no compiten<br>por atención.</p>
-        <p class="manifesto-line manifesto-mid" data-manifesto>Nadie lee.</p>
-        <p class="manifesto-line manifesto-mid" data-manifesto>Nadie escucha.</p>
-        <p class="manifesto-line manifesto-bold" data-manifesto>Todos <em>observan.</em></p>
-        <p class="manifesto-line manifesto-pause" data-manifesto>Por eso…</p>
-        <p class="manifesto-line manifesto-climax" data-manifesto>Construimos marcas<br>que entran por los <span class="accent-cyan">ojos.</span></p>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════
-     3. SERVICIOS — Menú visual compacto
-═══════════════════════════════════ -->
-<section class="services" id="servicios">
-    <div class="section-head">
-        <span class="section-label reveal-up">— Nuestros Servicios</span>
-        <h2 class="section-title reveal-up">Todo lo que tu marca<br>necesita, <span class="accent-red">en un lugar.</span></h2>
-    </div>
-
-    <div class="svc-menu">
-        <div class="svc-card reveal-up" data-tilt>
-            <div class="svc-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-            </div>
-            <h3>Branding &amp; Diseño</h3>
-            <div class="svc-chips">
-                <span class="svc-chip">Logo</span>
-                <span class="svc-chip">Identidad Visual</span>
-                <span class="svc-chip">Papelería</span>
-                <span class="svc-chip">Manual de Marca</span>
-            </div>
-        </div>
-
-        <div class="svc-card reveal-up" data-tilt>
-            <div class="svc-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>
-            </div>
-            <h3>Producción Audiovisual</h3>
-            <div class="svc-chips">
-                <span class="svc-chip">Video</span>
-                <span class="svc-chip">Fotografía</span>
-                <span class="svc-chip">Motion Design</span>
-                <span class="svc-chip">Edición</span>
-            </div>
-        </div>
-
-        <div class="svc-card svc-card--accent reveal-up" data-tilt>
-            <div class="svc-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            </div>
-            <h3>Desarrollo Web</h3>
-            <div class="svc-chips">
-                <span class="svc-chip">Landing Pages</span>
-                <span class="svc-chip">Sitios Corporativos</span>
-                <span class="svc-chip">E-commerce</span>
-                <span class="svc-chip">Portales</span>
-            </div>
-        </div>
-
-        <div class="svc-card reveal-up" data-tilt>
-            <div class="svc-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-            </div>
-            <h3>Social Media</h3>
-            <div class="svc-chips">
-                <span class="svc-chip">Contenido</span>
-                <span class="svc-chip">Community Mgmt</span>
-                <span class="svc-chip">Estrategia</span>
-                <span class="svc-chip">Ads</span>
-            </div>
-        </div>
-
-        <div class="svc-card reveal-up" data-tilt>
-            <div class="svc-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            </div>
-            <h3>Eventos</h3>
-            <div class="svc-chips">
-                <span class="svc-chip">Cobertura</span>
-                <span class="svc-chip">Producción</span>
-                <span class="svc-chip">Activaciones</span>
-                <span class="svc-chip">Streaming</span>
-            </div>
-        </div>
-
-        <div class="svc-card reveal-up" data-tilt>
-            <div class="svc-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-            </div>
-            <h3>SEO &amp; Performance</h3>
-            <div class="svc-chips">
-                <span class="svc-chip">SEO On-Page</span>
-                <span class="svc-chip">Analytics</span>
-                <span class="svc-chip">Velocidad</span>
-                <span class="svc-chip">Posicionamiento</span>
-            </div>
-        </div>
-
-        <div class="svc-card reveal-up" data-tilt>
-            <div class="svc-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-            </div>
-            <h3>Automatización &amp; CRM</h3>
-            <div class="svc-chips">
-                <span class="svc-chip">Integraciones</span>
-                <span class="svc-chip">Chatbots</span>
-                <span class="svc-chip">Email Marketing</span>
-                <span class="svc-chip">Dashboards</span>
-            </div>
-        </div>
-
-        <div class="svc-card reveal-up" data-tilt>
-            <div class="svc-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
-            </div>
-            <h3>E-commerce</h3>
-            <div class="svc-chips">
-                <span class="svc-chip">Tiendas Online</span>
-                <span class="svc-chip">Pasarelas de Pago</span>
-                <span class="svc-chip">Catálogos</span>
-                <span class="svc-chip">Inventario</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- MARQUEE DIVIDER -->
-<div class="marquee-section">
-    <div class="marquee-track marquee-track--slow">
-        <span>No vendemos publicaciones. Construimos percepción.</span><span class="mdot">✦</span>
-        <span>No hacemos videos. Creamos atención.</span><span class="mdot">✦</span>
-        <span>No diseñamos páginas. Creamos experiencias.</span><span class="mdot">✦</span>
-        <span>No hacemos marketing. Hacemos que te recuerden.</span><span class="mdot">✦</span>
-        <span>No vendemos publicaciones. Construimos percepción.</span><span class="mdot">✦</span>
-        <span>No hacemos videos. Creamos atención.</span><span class="mdot">✦</span>
-        <span>No diseñamos páginas. Creamos experiencias.</span><span class="mdot">✦</span>
-        <span>No hacemos marketing. Hacemos que te recuerden.</span>
+<!-- ═══ MARQUEE BAND ═══ -->
+<div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+        <span>Branding</span><span class="marquee-dot">✦</span>
+        <span>Contenido</span><span class="marquee-dot">✦</span>
+        <span>Reels</span><span class="marquee-dot">✦</span>
+        <span>Diseño Web</span><span class="marquee-dot">✦</span>
+        <span>SEO</span><span class="marquee-dot">✦</span>
+        <span>Publicidad</span><span class="marquee-dot">✦</span>
+        <span>Ecommerce</span><span class="marquee-dot">✦</span>
+        <span>Audiovisual</span><span class="marquee-dot">✦</span>
+        <span>Branding</span><span class="marquee-dot">✦</span>
+        <span>Contenido</span><span class="marquee-dot">✦</span>
+        <span>Reels</span><span class="marquee-dot">✦</span>
+        <span>Diseño Web</span><span class="marquee-dot">✦</span>
+        <span>SEO</span><span class="marquee-dot">✦</span>
+        <span>Publicidad</span><span class="marquee-dot">✦</span>
+        <span>Ecommerce</span><span class="marquee-dot">✦</span>
+        <span>Audiovisual</span><span class="marquee-dot">✦</span>
     </div>
 </div>
 
-<!-- ═══════════════════════════════════
-     4. VISUAL WEB — 4 planes nuevos
-═══════════════════════════════════ -->
-<section class="vweb" id="web-dev">
-    <div class="vweb-grid-bg"></div>
-    <div class="vweb-watermark">&lt;/&gt;</div>
-
-    <div class="vweb-inner">
-        <div class="section-head vweb-head">
-            <span class="section-label reveal-up">— VISUAL Web</span>
-            <h2 class="section-title reveal-up">
-                Planes para tu<br>
-                presencia <span class="accent-cyan">digital.</span>
-            </h2>
-            <p class="section-sub reveal-up">
-                Pago único, sin mensualidades. Elige el plan según el momento de tu negocio.
-            </p>
+<!-- ═══ 2. SERVICIOS ═══ -->
+<section class="services" id="servicios">
+    <div class="section-head">
+        <span class="section-label reveal">— Servicios</span>
+        <h2 class="section-title reveal">Todo lo que<br>tu marca <span class="accent-gold">necesita.</span></h2>
+    </div>
+    <div class="services-carousel reveal">
+        <div class="svc-track">
+            <article class="svc-card">
+                <div class="svc-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=85" alt="VISUAL Media" loading="lazy">
+                </div>
+                <div class="svc-body">
+                    <span class="svc-tag">VISUAL Media</span>
+                    <h3>Redes sociales<br>y contenido.</h3>
+                </div>
+            </article>
+            <article class="svc-card">
+                <div class="svc-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=85" alt="VISUAL Events" loading="lazy">
+                </div>
+                <div class="svc-body">
+                    <span class="svc-tag">VISUAL Events</span>
+                    <h3>Producción<br>audiovisual.</h3>
+                </div>
+            </article>
+            <article class="svc-card">
+                <div class="svc-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=85" alt="VISUAL Web" loading="lazy">
+                </div>
+                <div class="svc-body">
+                    <span class="svc-tag">VISUAL Web</span>
+                    <h3>Desarrollo<br>web a medida.</h3>
+                </div>
+            </article>
+            <article class="svc-card">
+                <div class="svc-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=85" alt="VISUAL Extras" loading="lazy">
+                </div>
+                <div class="svc-body">
+                    <span class="svc-tag">VISUAL Extras</span>
+                    <h3>Branding<br>y diseño.</h3>
+                </div>
+            </article>
+            <!-- duplicate set for seamless loop -->
+            <article class="svc-card" aria-hidden="true">
+                <div class="svc-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=85" alt="" loading="lazy">
+                </div>
+                <div class="svc-body">
+                    <span class="svc-tag">VISUAL Media</span>
+                    <h3>Redes sociales<br>y contenido.</h3>
+                </div>
+            </article>
+            <article class="svc-card" aria-hidden="true">
+                <div class="svc-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=85" alt="" loading="lazy">
+                </div>
+                <div class="svc-body">
+                    <span class="svc-tag">VISUAL Events</span>
+                    <h3>Producción<br>audiovisual.</h3>
+                </div>
+            </article>
+            <article class="svc-card" aria-hidden="true">
+                <div class="svc-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=85" alt="" loading="lazy">
+                </div>
+                <div class="svc-body">
+                    <span class="svc-tag">VISUAL Web</span>
+                    <h3>Desarrollo<br>web a medida.</h3>
+                </div>
+            </article>
+            <article class="svc-card" aria-hidden="true">
+                <div class="svc-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=85" alt="" loading="lazy">
+                </div>
+                <div class="svc-body">
+                    <span class="svc-tag">VISUAL Extras</span>
+                    <h3>Branding<br>y diseño.</h3>
+                </div>
+            </article>
         </div>
-
-        <div class="vweb-plans">
-
-            <!-- STARTER -->
-            <div class="vweb-plan reveal-up" data-tilt>
-                <div class="vweb-plan-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18"/><circle cx="7" cy="6" r="1" fill="currentColor"/><circle cx="10" cy="6" r="1" fill="currentColor"/></svg>
-                </div>
-                <div class="vweb-plan-head">
-                    <span class="vweb-plan-name">STARTER</span>
-                    <p class="vweb-plan-sub">Landing Page Profesional</p>
-                    <div class="vweb-plan-price">
-                        <span class="vwp-sym">S/</span>
-                        <span class="vwp-val">990</span>
-                    </div>
-                    <p class="vweb-plan-tag">Pago único · Entrega en 7 días</p>
-                    <p class="vweb-plan-target">Para emprendedores y profesionales independientes</p>
-                </div>
-                <ul class="vweb-plan-items">
-                    <li><span class="vwi">✦</span> Landing page de alta conversión</li>
-                    <li><span class="vwi">✦</span> Diseño UI/UX personalizado</li>
-                    <li><span class="vwi">✦</span> Formulario conectado a WhatsApp</li>
-                    <li><span class="vwi">✦</span> Totalmente responsive</li>
-                    <li><span class="vwi">✦</span> SEO básico optimizado</li>
-                    <li class="vwi-extra"><span class="vwi">✦</span> Optimización de velocidad</li>
-                    <li class="vwi-extra"><span class="vwi">✦</span> Google Analytics</li>
-                    <li class="vwi-extra"><span class="vwi">✦</span> Google Maps integrado</li>
-                    <li class="vwi-extra"><span class="vwi">✦</span> 1 ronda de ajustes</li>
-                </ul>
-                <button class="vweb-plan-toggle" data-plan-toggle aria-expanded="false">
-                    <span class="vpt-label">Ver todas las características</span>
-                    <svg class="vpt-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                </button>
-                <a href="#contacto" class="btn-ghost vweb-plan-btn magnetic">Solicitar ahora</a>
-            </div>
-
-            <!-- BUSINESS (featured) -->
-            <div class="vweb-plan vweb-plan--featured reveal-up" data-tilt>
-                <div class="vweb-plan-badge">Más solicitado</div>
-                <div class="vweb-plan-icon vweb-plan-icon--cyan">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                </div>
-                <div class="vweb-plan-head">
-                    <span class="vweb-plan-name">BUSINESS</span>
-                    <p class="vweb-plan-sub">Sitio Web Corporativo</p>
-                    <div class="vweb-plan-price">
-                        <span class="vwp-sym">S/</span>
-                        <span class="vwp-val">4,490</span>
-                    </div>
-                    <p class="vweb-plan-tag">Pago único · Entrega en 14 días</p>
-                    <p class="vweb-plan-target">Para empresas que buscan fortalecer su imagen corporativa</p>
-                </div>
-                <ul class="vweb-plan-items">
-                    <li><span class="vwi vwi--c">✦</span> Hasta 8 páginas</li>
-                    <li><span class="vwi vwi--c">✦</span> Diseño UI/UX premium</li>
-                    <li><span class="vwi vwi--c">✦</span> Sitio corporativo</li>
-                    <li><span class="vwi vwi--c">✦</span> CMS autoadministrable</li>
-                    <li><span class="vwi vwi--c">✦</span> Portafolio de proyectos</li>
-                    <li class="vwi-extra"><span class="vwi vwi--c">✦</span> Formularios avanzados</li>
-                    <li class="vwi-extra"><span class="vwi vwi--c">✦</span> SEO On-Page completo</li>
-                    <li class="vwi-extra"><span class="vwi vwi--c">✦</span> Integración WhatsApp</li>
-                    <li class="vwi-extra"><span class="vwi vwi--c">✦</span> Google Analytics</li>
-                    <li class="vwi-extra"><span class="vwi vwi--c">✦</span> Capacitación de uso</li>
-                    <li class="vwi-extra"><span class="vwi vwi--c">✦</span> 2 rondas de ajustes</li>
-                </ul>
-                <button class="vweb-plan-toggle" data-plan-toggle aria-expanded="false">
-                    <span class="vpt-label">Ver todas las características</span>
-                    <svg class="vpt-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                </button>
-                <a href="#contacto" class="btn-primary vweb-plan-btn magnetic">Quiero mi sitio</a>
-            </div>
-
-            <!-- GROWTH -->
-            <div class="vweb-plan reveal-up" data-tilt>
-                <div class="vweb-plan-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-                </div>
-                <div class="vweb-plan-head">
-                    <span class="vweb-plan-name">GROWTH</span>
-                    <p class="vweb-plan-sub">Web + Automatización</p>
-                    <div class="vweb-plan-price">
-                        <span class="vwp-sym">S/</span>
-                        <span class="vwp-val">6,990</span>
-                    </div>
-                    <p class="vweb-plan-tag">Pago único · Entrega en 21 días</p>
-                    <p class="vweb-plan-target">Para empresas que desean optimizar procesos y gestión comercial</p>
-                </div>
-                <ul class="vweb-plan-items">
-                    <li><span class="vwi">✦</span> Todo lo de Business</li>
-                    <li><span class="vwi">✦</span> Automatización de formularios</li>
-                    <li><span class="vwi">✦</span> Integración con CRM</li>
-                    <li><span class="vwi">✦</span> Correos automáticos</li>
-                    <li><span class="vwi">✦</span> Dashboard de métricas</li>
-                    <li class="vwi-extra"><span class="vwi">✦</span> Chat inteligente</li>
-                    <li class="vwi-extra"><span class="vwi">✦</span> Integraciones con IA</li>
-                    <li class="vwi-extra"><span class="vwi">✦</span> SEO avanzado</li>
-                    <li class="vwi-extra"><span class="vwi">✦</span> Optimización de conversión</li>
-                    <li class="vwi-extra"><span class="vwi">✦</span> 3 rondas de ajustes</li>
-                </ul>
-                <button class="vweb-plan-toggle" data-plan-toggle aria-expanded="false">
-                    <span class="vpt-label">Ver todas las características</span>
-                    <svg class="vpt-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                </button>
-                <a href="#contacto" class="btn-ghost vweb-plan-btn magnetic">Quiero crecer</a>
-            </div>
-
-            <!-- ECOMMERCE PRO -->
-            <div class="vweb-plan reveal-up" data-tilt>
-                <div class="vweb-plan-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
-                </div>
-                <div class="vweb-plan-head">
-                    <span class="vweb-plan-name">ECOMMERCE PRO</span>
-                    <p class="vweb-plan-sub">Tienda Online Profesional</p>
-                    <div class="vweb-plan-price">
-                        <span class="vwp-sym">S/</span>
-                        <span class="vwp-val">8,490</span>
-                    </div>
-                    <p class="vweb-plan-tag">Pago único · Entrega en 30 días</p>
-                    <p class="vweb-plan-target">Para empresas que desean vender online</p>
-                </div>
-                <ul class="vweb-plan-items">
-                    <li><span class="vwi vwi--r">✦</span> Tienda online completa</li>
-                    <li><span class="vwi vwi--r">✦</span> Diseño personalizado</li>
-                    <li><span class="vwi vwi--r">✦</span> Catálogo hasta 50 productos</li>
-                    <li><span class="vwi vwi--r">✦</span> Culqi + Mercado Pago</li>
-                    <li><span class="vwi vwi--r">✦</span> Gestión de inventario</li>
-                    <li class="vwi-extra"><span class="vwi vwi--r">✦</span> Panel de pedidos</li>
-                    <li class="vwi-extra"><span class="vwi vwi--r">✦</span> Cupones y descuentos</li>
-                    <li class="vwi-extra"><span class="vwi vwi--r">✦</span> SEO para productos</li>
-                    <li class="vwi-extra"><span class="vwi vwi--r">✦</span> Analytics Ecommerce</li>
-                    <li class="vwi-extra"><span class="vwi vwi--r">✦</span> Capacitación de uso</li>
-                    <li class="vwi-extra"><span class="vwi vwi--r">✦</span> 30 días de soporte</li>
-                </ul>
-                <button class="vweb-plan-toggle" data-plan-toggle aria-expanded="false">
-                    <span class="vpt-label">Ver todas las características</span>
-                    <svg class="vpt-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                </button>
-                <a href="#contacto" class="btn-ghost btn-ghost--red vweb-plan-btn magnetic">Vender online</a>
-            </div>
-
-        </div>
-
-        <!-- Portal callout -->
-        <div class="vweb-portal reveal-up">
-            <div class="vweb-portal-left">
-                <div class="vweb-portal-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 002-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v2"/><path d="M2 10h12"/><path d="M2 14h8"/><path d="M2 18h6"/></svg>
-                </div>
-                <div>
-                    <h3>Portal de Noticias <span class="accent-cyan">&amp; Plataformas</span></h3>
-                    <p>¿Necesitas algo más complejo? Portal de noticias, sistema de membresías, dashboard personalizado, app web o plataforma a medida. Cotización según requerimientos.</p>
-                    <div class="vweb-portal-tags">
-                        <span>Portal de Noticias</span>
-                        <span>Sistema de Usuarios</span>
-                        <span>Dashboard Custom</span>
-                        <span>App Web</span>
-                        <span>Intranet</span>
-                        <span>API Integrations</span>
-                    </div>
-                </div>
-            </div>
-            <a href="#contacto" class="btn-primary magnetic vweb-portal-cta">
-                <span>Cotizar proyecto</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-        </div>
-
     </div>
 </section>
 
-<!-- ═══════════════════════════════════
-     5. PORTAFOLIO
-═══════════════════════════════════ -->
+<!-- ═══ 3. PORTAFOLIO ═══ -->
 <section class="portfolio" id="portafolio">
     <div class="section-head">
-        <span class="section-label reveal-up">— Portafolio</span>
-        <h2 class="section-title reveal-up">Trabajo que<br><span class="accent-cyan">habla.</span></h2>
+        <span class="section-label reveal">— Portafolio</span>
+        <h2 class="section-title reveal">Trabajo que<br><span class="accent-teal">habla.</span></h2>
     </div>
-
-    <div class="pf-cta-grid reveal-up">
-
-        <!-- Portafolio Web -->
-        <a href="#portafolio-web" target="_blank" rel="noopener" class="pf-cta-card">
-            <div class="pf-cta-icon">
+    <div class="pf-grid">
+        <a href="https://drive.google.com/file/d/1QRY2ei-QSIBiEEDceiCT1iuEoaemOcUo/view?usp=sharing" target="_blank" rel="noopener" class="pf-card reveal">
+            <div class="pf-card-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
             </div>
             <h3>Portafolio Web</h3>
-            <p>Sitios web, landing pages, tiendas online y plataformas digitales que hemos desarrollado para nuestros clientes.</p>
-            <div class="pf-cta-action">
-                <span>Ver portafolio</span>
+            <p>Sitios, landing pages y tiendas online.</p>
+            <span class="pf-action">Ver proyectos
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </div>
+            </span>
         </a>
-
-        <!-- Portafolio Redes -->
-        <a href="#portafolio-redes" target="_blank" rel="noopener" class="pf-cta-card pf-cta-card--redes">
-            <div class="pf-cta-icon">
+        <a href="https://drive.google.com/file/d/16lAPgqClzNE5NARHR8I9F7teMIC7RHc4/view?usp=sharing" target="_blank" rel="noopener" class="pf-card pf-card--gold reveal">
+            <div class="pf-card-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
             </div>
             <h3>Portafolio Redes</h3>
-            <p>Estrategias visuales, contenido y campañas digitales para redes sociales que han transformado marcas.</p>
-            <div class="pf-cta-action">
-                <span>Ver portafolio</span>
+            <p>Estrategia visual y campañas digitales.</p>
+            <span class="pf-action">Ver proyectos
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </div>
+            </span>
         </a>
-
     </div>
 </section>
 
-<!-- ═══════════════════════════════════
-     6. CÓMO TRABAJAMOS — Sección combinada con tabs
-═══════════════════════════════════ -->
-<section class="cmo" id="proceso">
-    <div class="section-head">
-        <span class="section-label reveal-up">— Cómo Trabajamos</span>
-        <h2 class="section-title reveal-up">Proceso, resultados<br>y <span class="accent-cyan">tecnología.</span></h2>
-    </div>
-
-    <div class="cmo-tabs reveal-up">
-        <button class="cmo-tab active" data-tab="proceso">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            Proceso
-        </button>
-        <button class="cmo-tab" data-tab="resultados">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-            Resultados
-        </button>
-        <button class="cmo-tab" data-tab="tecnologia">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
-            Tecnología
-        </button>
-    </div>
-
-    <div class="cmo-panels reveal-up">
-
-        <div class="cmo-panel active" data-panel="proceso">
-            <div class="vweb-steps">
-                <div class="vweb-step">
-                    <div class="vweb-step-num">01</div>
-                    <h5>Briefing</h5>
-                    <p>Entendemos tu negocio, objetivos y audiencia para diseñar la estrategia correcta.</p>
-                </div>
-                <div class="vweb-step-arrow">→</div>
-                <div class="vweb-step">
-                    <div class="vweb-step-num">02</div>
-                    <h5>Diseño UI/UX</h5>
-                    <p>Prototipamos y diseñamos cada pantalla antes de escribir una línea de código.</p>
-                </div>
-                <div class="vweb-step-arrow">→</div>
-                <div class="vweb-step">
-                    <div class="vweb-step-num">03</div>
-                    <h5>Desarrollo</h5>
-                    <p>Construimos con tecnología moderna, código limpio y foco en velocidad y SEO.</p>
-                </div>
-                <div class="vweb-step-arrow">→</div>
-                <div class="vweb-step">
-                    <div class="vweb-step-num">04</div>
-                    <h5>Lanzamiento</h5>
-                    <p>Publicamos, configuramos dominio y hosting, y te enseñamos a usarlo.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="cmo-panel" data-panel="resultados">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
-                    </div>
-                    <div class="stat-num" data-count="100" data-suffix="+">0</div>
-                    <div class="stat-label">Proyectos realizados</div>
-                </div>
-                <div class="stat-div"></div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
-                    <div class="stat-num" data-count="50" data-suffix="+">0</div>
-                    <div class="stat-label">Marcas impulsadas</div>
-                </div>
-                <div class="stat-div"></div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-                    </div>
-                    <div class="stat-num" data-count="1" data-suffix="M+">0</div>
-                    <div class="stat-label">Visualizaciones generadas</div>
-                </div>
-                <div class="stat-div"></div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-                    </div>
-                    <div class="stat-num" data-count="98" data-suffix="%">0</div>
-                    <div class="stat-label">Clientes satisfechos</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="cmo-panel" data-panel="tecnologia">
-            <div class="cmo-tech-wrap">
-                <p class="vweb-tech-label">Stack tecnológico que usamos</p>
-                <div class="vweb-tech-list">
-                    <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
-                    <span>React</span><span>WordPress</span><span>WooCommerce</span>
-                    <span>Node.js</span><span>PHP</span><span>MySQL</span>
-                    <span>Figma</span><span>GSAP</span><span>SEO</span>
-                    <span>Google Analytics</span><span>Culqi</span><span>Mercado Pago</span>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════
-     7. SHOWREEL
-═══════════════════════════════════ -->
-<section class="showreel">
-    <div class="showreel-inner">
-        <div class="showreel-text reveal-up">
-            <span class="section-label">— Nuestro trabajo</span>
-            <h2>No hacemos contenido.<br><span class="accent-cyan">Creamos percepción.</span></h2>
-        </div>
-        <div class="showreel-frame reveal-up">
-            <img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=1920&h=820&fit=crop&q=80&auto=format" alt="Showreel VISUAL Group" class="showreel-thumb">
-            <div class="showreel-veil"></div>
-            <a href="https://wa.me/51981218584?text=Hola%2C%20quiero%20ver%20el%20showreel%20de%20VISUAL%20Group"
-               target="_blank" rel="noopener" class="play-btn magnetic" aria-label="Ver Showreel">
-                <div class="play-circle">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                </div>
-                <div class="play-ring play-ring--1"></div>
-                <div class="play-ring play-ring--2"></div>
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════
-     8. TESTIMONIOS — 1 línea por testimonio
-═══════════════════════════════════ -->
-<section class="testimonials">
-    <div class="section-head">
-        <span class="section-label reveal-up">— Testimonios</span>
-        <h2 class="section-title reveal-up">Lo que dicen<br>nuestros <span class="accent-cyan">clientes.</span></h2>
-    </div>
-
-    <div class="testi-slider">
-        <div class="testi-track" id="testi-track">
-            <div class="testi-card">
-                <div class="testi-stars">★★★★★</div>
-                <p>"Transformaron por completo nuestra presencia digital."</p>
-                <div class="testi-author">
-                    <div class="author-av">CE</div>
-                    <div>
-                        <strong>Carlos Espinoza</strong>
-                        <span>CEO, TechPeru</span>
-                    </div>
-                </div>
-            </div>
-            <div class="testi-card">
-                <div class="testi-stars">★★★★★</div>
-                <p>"Nuestras redes crecieron 300% en pocos meses."</p>
-                <div class="testi-author">
-                    <div class="author-av">MR</div>
-                    <div>
-                        <strong>María Rodríguez</strong>
-                        <span>Directora de Marketing, InnovaLima</span>
-                    </div>
-                </div>
-            </div>
-            <div class="testi-card">
-                <div class="testi-stars">★★★★★</div>
-                <p>"Capturaron exactamente la esencia de nuestra marca."</p>
-                <div class="testi-author">
-                    <div class="author-av">JP</div>
-                    <div>
-                        <strong>Javier Paredes</strong>
-                        <span>Gerente General, GrupoCorp</span>
-                    </div>
-                </div>
-            </div>
-            <div class="testi-card">
-                <div class="testi-stars">★★★★★</div>
-                <p>"Nuestra web convierte visitas en clientes reales."</p>
-                <div class="testi-author">
-                    <div class="author-av">AL</div>
-                    <div>
-                        <strong>Ana Lozano</strong>
-                        <span>Fundadora, BrandLab Peru</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="testi-controls reveal-up">
-        <button class="testi-btn" id="testi-prev" aria-label="Anterior">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-        </button>
-        <div class="testi-dots" id="testi-dots">
-            <span class="tdot active"></span>
-            <span class="tdot"></span>
-            <span class="tdot"></span>
-            <span class="tdot"></span>
-        </div>
-        <button class="testi-btn" id="testi-next" aria-label="Siguiente">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </button>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════
-     9. PAQUETES — Toggle Proyectos / Suscripciones
-═══════════════════════════════════ -->
+<!-- ═══ 4. PAQUETES ═══ -->
 <section class="packages" id="paquetes">
     <div class="section-head">
-        <span class="section-label reveal-up">— Planes</span>
-        <h2 class="section-title reveal-up">Inversión que<br><span class="accent-red">transforma.</span></h2>
-        <p class="section-sub reveal-up">Proyectos únicos o acompañamiento mensual: tú decides.</p>
+        <span class="section-label reveal">— Planes</span>
+        <h2 class="section-title reveal">Inversión que<br><span class="accent-gold">transforma.</span></h2>
     </div>
 
-    <div class="pkg-toggle reveal-up">
-        <button class="pkg-toggle-btn" data-pkg-tab="proyectos">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            Proyectos Web
-        </button>
-        <button class="pkg-toggle-btn active" data-pkg-tab="suscripciones">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
-            Suscripciones mensuales
-        </button>
+    <input type="radio" name="pkg-tab" id="pkg-tab-redes" class="pkg-radio" checked>
+    <input type="radio" name="pkg-tab" id="pkg-tab-web" class="pkg-radio">
+    <div class="pkg-toggle">
+        <label for="pkg-tab-redes" class="pkg-toggle-btn">Redes &amp; Contenido</label>
+        <label for="pkg-tab-web" class="pkg-toggle-btn">Desarrollo Web</label>
     </div>
 
-    <!-- Panel: Proyectos one-time -->
-    <div class="pkg-panel" data-pkg-panel="proyectos">
-        <div class="pkg-projects">
-            <div class="pkg-projects-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            </div>
-            <h3>¿Buscas un proyecto único?</h3>
-            <p>Sitios web, landing pages, tiendas online y plataformas a medida. Pago único, sin mensualidades, con entrega garantizada.</p>
-            <a href="#web-dev" class="btn-primary magnetic">
-                <span>Ver planes VISUAL Web</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+    <!-- REDES -->
+    <div class="packages-grid pkg-panel" id="pkg-redes">
+        <div class="pkg-card">
+            <span class="pkg-tier">START</span>
+            <div class="pkg-price">S/ <strong>1,490</strong><span>/mes</span></div>
+            <h3>Presencia y consistencia</h3>
+            <ul>
+                <li>2 redes principales</li>
+                <li>10 piezas gráficas</li>
+                <li>4 reels esenciales</li>
+                <li>Reporte mensual</li>
+            </ul>
+            <a href="#contacto" class="btn-ghost pkg-btn">Empezar</a>
+        </div>
+        <div class="pkg-card pkg-featured">
+            <span class="pkg-badge">Más popular</span>
+            <span class="pkg-tier">PRO GROWTH</span>
+            <div class="pkg-price">S/ <strong>2,990</strong><span>/mes</span></div>
+            <h3>Tráfico, leads y ventas</h3>
+            <ul>
+                <li>Hasta 3 redes</li>
+                <li>16 piezas estratégicas</li>
+                <li>8 reels con gancho</li>
+                <li>1 sesión audiovisual</li>
+            </ul>
+            <a href="#contacto" class="btn-primary pkg-btn">Empezar</a>
+        </div>
+        <div class="pkg-card">
+            <span class="pkg-tier">ELITE BRAND</span>
+            <div class="pkg-price">S/ <strong>5,800</strong><span>/mes</span></div>
+            <h3>Posicionamiento omnicanal</h3>
+            <ul>
+                <li>Multiplataforma</li>
+                <li>Hasta 25 piezas</li>
+                <li>16 reels premium</li>
+                <li>Dashboard en vivo</li>
+            </ul>
+            <a href="#contacto" class="btn-ghost pkg-btn">Empezar</a>
         </div>
     </div>
 
-    <!-- Panel: Suscripciones mensuales (default active) -->
-    <div class="pkg-panel active" data-pkg-panel="suscripciones">
-        <div class="packages-grid">
-            <div class="pkg-card reveal-up" data-tilt>
-                <div class="pkg-glow"></div>
-                <div class="pkg-header">
-                    <span class="pkg-tier">START</span>
-                    <div class="pkg-price">
-                        <span class="psym">S/</span>
-                        <span class="pval">1,490</span>
-                        <span class="pmo">/mes</span>
-                    </div>
-                    <p class="pkg-tag">Empieza a ser visible.</p>
-                </div>
-                <ul class="pkg-features">
-                    <li><span class="fc">✦</span> 12 publicaciones mensuales</li>
-                    <li><span class="fc">✦</span> Diseño gráfico profesional</li>
-                    <li><span class="fc">✦</span> Copy y hashtags optimizados</li>
-                    <li><span class="fc">✦</span> 1 red social</li>
-                    <li><span class="fc">✦</span> Reporte mensual</li>
-                    <li class="feat-off"><span>✦</span> Videos Reels</li>
-                    <li class="feat-off"><span>✦</span> Community Management</li>
-                </ul>
-                <a href="#contacto" class="btn-ghost pkg-btn magnetic">Empezar ahora</a>
-            </div>
-
-            <div class="pkg-card pkg-featured reveal-up" data-tilt>
-                <div class="pkg-badge">Más popular</div>
-                <div class="pkg-glow pkg-glow--cyan"></div>
-                <div class="pkg-header">
-                    <span class="pkg-tier">PRO GROWTH</span>
-                    <div class="pkg-price">
-                        <span class="psym">S/</span>
-                        <span class="pval">2,990</span>
-                        <span class="pmo">/mes</span>
-                    </div>
-                    <p class="pkg-tag">Crece con estrategia.</p>
-                </div>
-                <ul class="pkg-features">
-                    <li><span class="fc fc--cyan">✦</span> 20 publicaciones mensuales</li>
-                    <li><span class="fc fc--cyan">✦</span> 4 Videos Reels</li>
-                    <li><span class="fc fc--cyan">✦</span> Community Management</li>
-                    <li><span class="fc fc--cyan">✦</span> 2 redes sociales</li>
-                    <li><span class="fc fc--cyan">✦</span> Estrategia de contenido</li>
-                    <li><span class="fc fc--cyan">✦</span> Ads básicos incluidos</li>
-                    <li><span class="fc fc--cyan">✦</span> Reporte detallado</li>
-                </ul>
-                <a href="#contacto" class="btn-primary pkg-btn magnetic">Crecer ahora</a>
-            </div>
-
-            <div class="pkg-card reveal-up" data-tilt>
-                <div class="pkg-glow pkg-glow--red"></div>
-                <div class="pkg-header">
-                    <span class="pkg-tier">ELITE BRAND</span>
-                    <div class="pkg-price">
-                        <span class="psym">S/</span>
-                        <span class="pval">5,800</span>
-                        <span class="pmo">/mes</span>
-                    </div>
-                    <p class="pkg-tag">Domina tu industria.</p>
-                </div>
-                <ul class="pkg-features">
-                    <li><span class="fc fc--red">✦</span> 30+ publicaciones mensuales</li>
-                    <li><span class="fc fc--red">✦</span> 8 Videos Reels premium</li>
-                    <li><span class="fc fc--red">✦</span> Shooting fotográfico mensual</li>
-                    <li><span class="fc fc--red">✦</span> Todas las redes sociales</li>
-                    <li><span class="fc fc--red">✦</span> Estrategia 360°</li>
-                    <li><span class="fc fc--red">✦</span> Ads avanzados + Google</li>
-                    <li><span class="fc fc--red">✦</span> Account Manager dedicado</li>
-                </ul>
-                <a href="#contacto" class="btn-ghost btn-ghost--red pkg-btn magnetic">Ser elite</a>
-            </div>
+    <!-- DESARROLLO WEB -->
+    <div class="packages-grid pkg-panel cols-4" id="pkg-web">
+        <div class="pkg-card">
+            <span class="pkg-tier">STARTER</span>
+            <h3>Landing Page Profesional</h3>
+            <div class="pkg-price">S/ <strong>1,990</strong></div>
+            <p class="pkg-meta">Pago único · Entrega en 7 días</p>
+            <p class="pkg-desc">Para emprendedores y profesionales independientes</p>
+            <ul>
+                <li>Landing page de alta conversión</li>
+                <li>Diseño UI/UX personalizado</li>
+                <li>Formulario conectado a WhatsApp</li>
+                <li>Totalmente responsive</li>
+                <li>SEO básico optimizado</li>
+                <li>Optimización de velocidad</li>
+                <li>Google Analytics</li>
+                <li>Google Maps integrado</li>
+                <li>1 ronda de ajustes</li>
+            </ul>
+            <a href="#contacto" class="btn-ghost pkg-btn">Solicitar ahora</a>
+        </div>
+        <div class="pkg-card pkg-featured">
+            <span class="pkg-badge">Más solicitado</span>
+            <span class="pkg-tier">BUSINESS</span>
+            <h3>Sitio Web Corporativo</h3>
+            <div class="pkg-price">S/ <strong>4,490</strong></div>
+            <p class="pkg-meta">Pago único · Entrega en 14 días</p>
+            <p class="pkg-desc">Para empresas que buscan fortalecer su imagen corporativa</p>
+            <ul>
+                <li>Hasta 8 páginas</li>
+                <li>Diseño UI/UX premium</li>
+                <li>Sitio corporativo</li>
+                <li>CMS autoadministrable</li>
+                <li>Portafolio de proyectos</li>
+                <li>Formularios avanzados</li>
+                <li>SEO On-Page completo</li>
+                <li>Integración WhatsApp</li>
+                <li>Google Analytics</li>
+                <li>Capacitación de uso</li>
+                <li>2 rondas de ajustes</li>
+            </ul>
+            <a href="#contacto" class="btn-primary pkg-btn">Quiero mi sitio</a>
+        </div>
+        <div class="pkg-card">
+            <span class="pkg-tier">GROWTH</span>
+            <h3>Web + Automatización</h3>
+            <div class="pkg-price">S/ <strong>6,990</strong></div>
+            <p class="pkg-meta">Pago único · Entrega en 21 días</p>
+            <p class="pkg-desc">Para empresas que desean optimizar procesos y gestión comercial</p>
+            <ul>
+                <li>Todo lo de Business</li>
+                <li>Automatización de formularios</li>
+                <li>Integración con CRM</li>
+                <li>Correos automáticos</li>
+                <li>Dashboard de métricas</li>
+                <li>Chat inteligente</li>
+                <li>Integraciones con IA</li>
+                <li>SEO avanzado</li>
+                <li>Optimización de conversión</li>
+                <li>3 rondas de ajustes</li>
+            </ul>
+            <a href="#contacto" class="btn-ghost pkg-btn">Quiero crecer</a>
+        </div>
+        <div class="pkg-card">
+            <span class="pkg-tier">ECOMMERCE PRO</span>
+            <h3>Tienda Online Profesional</h3>
+            <div class="pkg-price">S/ <strong>8,490</strong></div>
+            <p class="pkg-meta">Pago único · Entrega en 30 días</p>
+            <p class="pkg-desc">Para empresas que desean vender online</p>
+            <ul>
+                <li>Tienda online completa</li>
+                <li>Diseño personalizado</li>
+                <li>Catálogo hasta 50 productos</li>
+                <li>Culqi + Mercado Pago</li>
+                <li>Gestión de inventario</li>
+                <li>Panel de pedidos</li>
+                <li>Cupones y descuentos</li>
+                <li>SEO para productos</li>
+                <li>Analytics Ecommerce</li>
+                <li>Capacitación de uso</li>
+                <li>30 días de soporte</li>
+            </ul>
+            <a href="#contacto" class="btn-ghost pkg-btn">Vender online</a>
         </div>
     </div>
 </section>
 
-<!-- ═══════════════════════════════════
-     10. CONTACTO — Doble notificación
-═══════════════════════════════════ -->
+<!-- ═══ 5. CONTACTO ═══ -->
 <section class="contact" id="contacto">
-    <div class="contact-grid">
-        <div class="contact-left reveal-up">
-            <span class="section-label">— Hablemos</span>
-            <h2 class="contact-title">
-                ¿Listo para que tu<br>marca <span class="accent-red">impacte?</span>
-            </h2>
-            <p class="contact-sub">Cuéntanos sobre tu proyecto. Hacemos que las marcas se vean increíbles.</p>
-
-            <div class="contact-details">
-                <a href="mailto:administracion@visualgroup.net" class="cd-item">
-                    <div class="cd-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                    </div>
-                    <span>administracion@visualgroup.net</span>
-                </a>
-                <a href="https://wa.me/51981218584" target="_blank" rel="noopener" class="cd-item">
-                    <div class="cd-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                    </div>
-                    <span>+51 981 218 584</span>
-                </a>
-                <div class="cd-item">
-                    <div class="cd-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                    </div>
-                    <span>Lima, Perú</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="contact-right reveal-up">
-            <form class="contact-form" id="contact-form" action="https://formsubmit.co/administracion@visualgroup.net" method="POST" novalidate>
-                <input type="hidden" name="_subject" value="Nuevo contacto desde VISUAL Group Web">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
-
-                <div class="form-row">
-                    <div class="form-field">
-                        <input type="text" name="nombre" id="f-nombre" placeholder="Tu nombre" required class="f-input">
-                    </div>
-                    <div class="form-field">
-                        <input type="email" name="correo" placeholder="Tu correo" required class="f-input">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-field">
-                        <input type="text" name="empresa" placeholder="Tu empresa" class="f-input">
-                    </div>
-                    <div class="form-field">
-                        <select name="servicio" id="f-servicio" class="f-input f-select">
-                            <option value="" disabled selected>¿Qué necesitas?</option>
-                            <option value="Branding">Branding</option>
-                            <option value="Redes Sociales">Redes Sociales</option>
-                            <option value="Audiovisual">Audiovisual</option>
-                            <option value="Desarrollo Web">Desarrollo Web</option>
-                            <option value="Eventos">Eventos</option>
-                            <option value="Paquete completo">Paquete completo</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-field">
-                    <textarea name="mensaje" id="f-mensaje" placeholder="Cuéntanos sobre tu proyecto..." rows="4" class="f-input f-textarea"></textarea>
-                </div>
-
-                <div class="form-status" id="form-status" aria-live="polite"></div>
-
-                <button type="submit" class="btn-primary form-submit magnetic">
-                    <span>Quiero potenciar mi marca</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </button>
-            </form>
+    <div class="contact-info reveal">
+        <span class="section-label">— Contacto</span>
+        <h2 class="contact-title">Conversemos<br>sobre tu <span class="accent-gold">marca.</span></h2>
+        <div class="contact-details">
+            <a href="mailto:administracion@visualgroup.net" class="cd-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                administracion@visualgroup.net
+            </a>
+            <a href="https://wa.me/51981218584" target="_blank" rel="noopener" class="cd-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                +51 981 218 584
+            </a>
+            <span class="cd-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Lima, Perú
+            </span>
         </div>
     </div>
+    <form class="contact-form reveal" id="contact-form" action="https://formsubmit.co/administracion@visualgroup.net" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="Nuevo contacto desde VISUAL Group Web">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input class="f-input" type="text" name="nombre" id="f-nombre" placeholder="Nombre" required>
+        <input class="f-input" type="email" name="correo" placeholder="Correo" required>
+        <select class="f-input f-select" name="servicio" id="f-servicio">
+            <option value="">Servicio de interés</option>
+            <option>VISUAL Media</option>
+            <option>VISUAL Events</option>
+            <option>VISUAL Web</option>
+            <option>VISUAL Extras</option>
+            <option>Plan integral</option>
+        </select>
+        <textarea class="f-input f-textarea" name="mensaje" id="f-mensaje" placeholder="Cuéntanos sobre tu proyecto" rows="4"></textarea>
+        <div class="form-status" id="form-status" aria-live="polite"></div>
+        <button type="submit" class="btn-primary form-submit">Enviar mensaje</button>
+    </form>
 </section>
 
-<!-- ═══════════════════════════════════
-     11. FOOTER
-═══════════════════════════════════ -->
+<!-- FOOTER -->
 <footer class="footer">
     <div class="footer-inner">
-        <div class="footer-top">
-            <div class="footer-brand">
-                <img src="logo_visual.png" alt="VISUAL Group" class="footer-logo">
-                <p>Donde todo entra por los ojos.</p>
-                <div class="footer-social">
-                    <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                    </a>
-                    <a href="https://tiktok.com" target="_blank" rel="noopener" class="social-link" aria-label="TikTok">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.53V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
-                    </a>
-                    <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                    </a>
-                    <a href="https://youtube.com" target="_blank" rel="noopener" class="social-link" aria-label="YouTube">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
-                    </a>
-                </div>
-            </div>
-            <div class="footer-nav">
-                <div class="footer-col">
-                    <h5>Navegación</h5>
-                    <a href="#inicio">Inicio</a>
-                    <a href="#servicios">Servicios</a>
-                    <a href="#web-dev">VISUAL Web</a>
-                    <a href="#portafolio-web" target="_blank" rel="noopener">Portafolio Web</a>
-                    <a href="#portafolio-redes" target="_blank" rel="noopener">Portafolio Redes</a>
-                    <a href="#proceso">Cómo Trabajamos</a>
-                    <a href="#paquetes">Paquetes</a>
-                    <a href="#contacto">Contacto</a>
-                </div>
-                <div class="footer-col">
-                    <h5>Contacto</h5>
-                    <a href="mailto:administracion@visualgroup.net">administracion@visualgroup.net</a>
-                    <a href="https://wa.me/51981218584" target="_blank" rel="noopener">+51 981 218 584</a>
-                    <span>Lima, Perú</span>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 VISUAL Group. Todos los derechos reservados.</p>
-            <p>Hecho con ✦ en Lima, Perú.</p>
+        <img src="logo_visual.png" alt="VISUAL Group" class="footer-logo">
+        <p class="footer-copy">© 2026 VISUAL Group — Donde todo entra por los ojos.</p>
+        <div class="footer-links">
+            <a href="mailto:administracion@visualgroup.net">administracion@visualgroup.net</a>
+            <a href="https://wa.me/51981218584" target="_blank" rel="noopener">+51 981 218 584</a>
         </div>
     </div>
-    <div class="footer-bg-word">VISUAL</div>
 </footer>
 
 <!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/51981218584?text=Hola%2C%20quiero%20potenciar%20mi%20marca%20con%20VISUAL%20Group"
-   target="_blank" rel="noopener"
-   class="wa-float" id="wa-float" aria-label="Contactar por WhatsApp">
-    <div class="wa-tooltip">Hablemos de tu próximo proyecto</div>
-    <div class="wa-icon">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </div>
+<a href="https://wa.me/51981218584?text=Hola%2C%20me%20comunico%20desde%20visualgroup.net.%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20VISUAL%20Group." target="_blank" rel="noopener" class="wa-float" id="wa-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" class="wa-svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
     <div class="wa-pulse"></div>
 </a>
 
-<!-- SCRIPTS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.0.42/dist/lenis.min.js"></script>
 <script src="script.js"></script>
+<script>
+  /* Failsafe: if script.js fails to load, still unlock the page after 3.8s */
+  setTimeout(function () {
+    document.body.classList.remove("is-loading");
+    var p = document.getElementById("preloader");
+    if (p) p.classList.add("done");
+    document.querySelectorAll(".reveal:not(.is-visible)").forEach(function (el) {
+      el.classList.add("is-visible");
+    });
+  }, 3800);
+</script>
 </body>
 </html>

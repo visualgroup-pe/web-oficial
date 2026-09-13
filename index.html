@@ -13,27 +13,47 @@
 </head>
 <body class="is-loading">
 
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-close" id="mobile-close" aria-label="Cerrar">✕</button>
+    <nav class="mobile-nav">
+        <a href="index.html" class="mobile-link active">Inicio</a>
+        <a href="nosotros.html" class="mobile-link">Nosotros</a>
+        <a href="servicios.html" class="mobile-link">Servicios</a>
+        <a href="portafolio.html" class="mobile-link">Portafolio</a>
+        <a href="contacto.html" class="mobile-link">Contacto</a>
+    </nav>
+    <a href="https://wa.me/51912461505?text=Hola%2C%20me%20comunico%20desde%20visualgroup.net.%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20VISUAL%20Group." target="_blank" rel="noopener" class="mobile-wa-btn">WhatsApp</a>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+        <img src="logo_visual.png" alt="VISUAL Group" class="nav-logo-img">
+    </a>
+    <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link active">Inicio</a>
+        <a href="nosotros.html" class="nav-link">Nosotros</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="portafolio.html" class="nav-link">Portafolio</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+    </nav>
+    <div class="nav-actions">
+        <a href="https://wa.me/51912461505?text=Hola%2C%20me%20comunico%20desde%20visualgroup.net.%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20VISUAL%20Group." target="_blank" rel="noopener" class="btn-wa-nav">WhatsApp</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
 <!-- ═══ PRELOADER ═══ -->
 <div class="preloader" id="preloader">
     <div class="pl-stage">
-        <!-- orbiting icons -->
-        <span class="pl-ico pl-ico--ig" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-        </span>
-        <span class="pl-ico pl-ico--fb" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3l.5-3H14V4.5c0-.9.3-1.5 1.6-1.5H17V.2C16.7.1 15.7 0 14.6 0 12.1 0 10.5 1.5 10.5 4.3V6H8v3h2.5v9H14z"/></svg>
-        </span>
-        <span class="pl-ico pl-ico--wa" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.6.2s-.7.9-.9 1.1c-.2.2-.3.2-.6.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.7-1.3.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.9-2-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 5 4.3 1.8.8 2.5.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
-        </span>
-        <span class="pl-ico pl-ico--code" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-        </span>
-        <span class="pl-ico pl-ico--rocket" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2 0-2.8a2 2 0 0 0-3 0z"/><path d="M12 15l-3-3a22 22 0 0 1 8-10c2 0 4 2 4 4a22 22 0 0 1-9 9z"/><path d="M9 12H4s.5-2.8 2-4c1.7-1.3 5 0 5 0"/><path d="M12 15v5s2.8-.5 4-2c1.3-1.7 0-5 0-5"/></svg>
-        </span>
-
-        <!-- phone -->
+        <span class="pl-ico pl-ico--ig" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
+        <span class="pl-ico pl-ico--fb" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3l.5-3H14V4.5c0-.9.3-1.5 1.6-1.5H17V.2C16.7.1 15.7 0 14.6 0 12.1 0 10.5 1.5 10.5 4.3V6H8v3h2.5v9H14z"/></svg></span>
+        <span class="pl-ico pl-ico--wa" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.6.2s-.7.9-.9 1.1c-.2.2-.3.2-.6.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.7-1.3.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.9-2-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 5 4.3 1.8.8 2.5.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.3z"/></svg></span>
+        <span class="pl-ico pl-ico--code" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+        <span class="pl-ico pl-ico--rocket" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2 0-2.8a2 2 0 0 0-3 0z"/><path d="M12 15l-3-3a22 22 0 0 1 8-10c2 0 4 2 4 4a22 22 0 0 1-9 9z"/><path d="M9 12H4s.5-2.8 2-4c1.7-1.3 5 0 5 0"/><path d="M12 15v5s2.8-.5 4-2c1.3-1.7 0-5 0-5"/></svg></span>
         <div class="pl-phone">
             <span class="pl-notch"></span>
             <div class="pl-screen">
@@ -44,7 +64,6 @@
                     <div class="pl-post pl-post--img pl-g2"></div>
                     <div class="pl-post"><span class="pl-post-av"></span><span class="pl-post-lines"><i></i><i></i></span></div>
                     <div class="pl-post pl-post--img pl-g3"></div>
-                    <!-- duplicate for seamless loop -->
                     <div class="pl-post"><span class="pl-post-av"></span><span class="pl-post-lines"><i></i><i></i></span></div>
                     <div class="pl-post pl-post--img pl-g1"></div>
                     <div class="pl-post"><span class="pl-post-av"></span><span class="pl-post-lines"><i></i><i></i></span></div>
@@ -54,44 +73,12 @@
             </div>
         </div>
     </div>
-
     <img src="logo_visual.png" alt="VISUAL Group" class="pl-logo">
     <div class="pl-progress"><span class="pl-progress-fill"></span></div>
     <p class="pl-caption">Desplegando tu presencia digital</p>
 </div>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobile-menu">
-    <button class="mobile-close" id="mobile-close" aria-label="Cerrar">✕</button>
-    <nav class="mobile-nav">
-        <a href="#servicios" class="mobile-link">Servicios</a>
-        <a href="#portafolio" class="mobile-link">Portafolio</a>
-        <a href="#paquetes" class="mobile-link">Paquetes</a>
-        <a href="#contacto" class="mobile-link">Contacto</a>
-    </nav>
-    <a href="https://wa.me/51981218584?text=Hola%2C%20me%20comunico%20desde%20visualgroup.net.%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20VISUAL%20Group." target="_blank" rel="noopener" class="mobile-wa-btn">WhatsApp</a>
-</div>
-
-<!-- NAVBAR -->
-<header class="navbar" id="navbar">
-    <a href="#inicio" class="nav-logo">
-        <img src="logo_visual.png" alt="VISUAL Group" class="nav-logo-img">
-    </a>
-    <nav class="nav-links" id="nav-links">
-        <a href="#servicios" class="nav-link">Servicios</a>
-        <a href="#portafolio" class="nav-link">Portafolio</a>
-        <a href="#paquetes" class="nav-link">Paquetes</a>
-        <a href="#contacto" class="nav-link">Contacto</a>
-    </nav>
-    <div class="nav-actions">
-        <a href="https://wa.me/51981218584?text=Hola%2C%20me%20comunico%20desde%20visualgroup.net.%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20VISUAL%20Group." target="_blank" rel="noopener" class="btn-wa-nav">WhatsApp</a>
-        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
-            <span></span><span></span><span></span>
-        </button>
-    </div>
-</header>
-
-<!-- ═══ 1. HERO ═══ -->
+<!-- ═══ HERO ═══ -->
 <section class="hero" id="inicio">
     <div class="hero-bg">
         <video class="hero-bg-video" id="hero-video" autoplay muted loop playsinline preload="auto"
@@ -102,43 +89,39 @@
     </div>
     <div class="hero-content">
         <p class="hero-label reveal">Lima, Perú · Agencia Creativa &amp; Digital</p>
-        <h1 class="hero-title reveal">
-            Donde todo<br>entra por los<br><span class="accent-gold">ojos.</span>
-        </h1>
+        <h1 class="hero-title reveal">Donde todo<br>entra por los<br><span class="accent-gold">ojos.</span></h1>
+        <p class="section-sub reveal" style="margin-bottom:34px;">Contenido, reels, web y branding que se ven increíbles y <strong style="color:var(--text)">convierten seguidores en clientes</strong>. Gestionamos +800K seguidores y creamos experiencias digitales que hacen crecer marcas.</p>
         <div class="hero-ctas reveal">
-            <a href="#contacto" class="btn-primary">Agendar reunión</a>
-            <a href="#servicios" class="btn-ghost">Ver servicios</a>
+            <a href="contacto.html" class="btn-primary">Agendar diagnóstico gratuito</a>
+            <a href="portafolio.html" class="btn-ghost">Ver portafolio</a>
         </div>
     </div>
-    <a href="#servicios" class="hero-scroll-hint" aria-label="Bajar">
-        <div class="scroll-line"></div>
-        <span>Scroll</span>
-    </a>
+    <a href="#intro" class="hero-scroll-hint" aria-label="Bajar"><div class="scroll-line"></div><span>Scroll</span></a>
 </section>
 
-<!-- ═══ MARQUEE BAND ═══ -->
+<!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-        <span>Branding</span><span class="marquee-dot">✦</span>
-        <span>Contenido</span><span class="marquee-dot">✦</span>
-        <span>Reels</span><span class="marquee-dot">✦</span>
-        <span>Diseño Web</span><span class="marquee-dot">✦</span>
-        <span>SEO</span><span class="marquee-dot">✦</span>
-        <span>Publicidad</span><span class="marquee-dot">✦</span>
-        <span>Ecommerce</span><span class="marquee-dot">✦</span>
-        <span>Audiovisual</span><span class="marquee-dot">✦</span>
-        <span>Branding</span><span class="marquee-dot">✦</span>
-        <span>Contenido</span><span class="marquee-dot">✦</span>
-        <span>Reels</span><span class="marquee-dot">✦</span>
-        <span>Diseño Web</span><span class="marquee-dot">✦</span>
-        <span>SEO</span><span class="marquee-dot">✦</span>
-        <span>Publicidad</span><span class="marquee-dot">✦</span>
-        <span>Ecommerce</span><span class="marquee-dot">✦</span>
-        <span>Audiovisual</span><span class="marquee-dot">✦</span>
+        <span>Branding</span><span class="marquee-dot">✦</span><span>Contenido</span><span class="marquee-dot">✦</span><span>Reels</span><span class="marquee-dot">✦</span><span>Diseño Web</span><span class="marquee-dot">✦</span><span>SEO</span><span class="marquee-dot">✦</span><span>Publicidad</span><span class="marquee-dot">✦</span><span>Ecommerce</span><span class="marquee-dot">✦</span><span>Audiovisual</span><span class="marquee-dot">✦</span><span>Branding</span><span class="marquee-dot">✦</span><span>Contenido</span><span class="marquee-dot">✦</span><span>Reels</span><span class="marquee-dot">✦</span><span>Diseño Web</span><span class="marquee-dot">✦</span><span>SEO</span><span class="marquee-dot">✦</span><span>Publicidad</span><span class="marquee-dot">✦</span><span>Ecommerce</span><span class="marquee-dot">✦</span><span>Audiovisual</span><span class="marquee-dot">✦</span>
     </div>
 </div>
 
-<!-- ═══ 2. SERVICIOS ═══ -->
+<!-- INTRO + STATS -->
+<section class="wrap" id="intro" style="background:var(--bg);">
+    <div class="section-head center">
+        <span class="section-label reveal">— Agencia de contenido digital</span>
+        <h2 class="section-title reveal">Comunicación estratégica<br>que se ve y <span class="accent-teal">convierte.</span></h2>
+        <p class="section-sub reveal">Somos una agencia creativa fundada por dos perfiles complementarios: mirada audiovisual y estructura tecnológica. Hacemos contenido que no solo se ve increíble, sino que <strong style="color:var(--text)">funciona y genera comunidad</strong>.</p>
+    </div>
+    <div class="statband reveal">
+        <div class="stat"><div class="stat-num">802K</div><div class="stat-label">Seguidores gestionados</div></div>
+        <div class="stat"><div class="stat-num">138K</div><div class="stat-label">Views en un reel</div></div>
+        <div class="stat"><div class="stat-num">+70K</div><div class="stat-label">Asistentes a eventos</div></div>
+        <div class="stat"><div class="stat-num">+2</div><div class="stat-label">Años de experiencia</div></div>
+    </div>
+</section>
+
+<!-- SERVICIOS (teaser) -->
 <section class="services" id="servicios">
     <div class="section-head">
         <span class="section-label reveal">— Servicios</span>
@@ -147,293 +130,81 @@
     <div class="services-carousel reveal">
         <div class="svc-track">
             <article class="svc-card">
-                <div class="svc-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=85" alt="VISUAL Media" loading="lazy">
-                </div>
-                <div class="svc-body">
-                    <span class="svc-tag">VISUAL Media</span>
-                    <h3>Redes sociales<br>y contenido.</h3>
-                </div>
+                <div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=85" alt="VISUAL Media" loading="lazy"></div>
+                <div class="svc-body"><span class="svc-tag">VISUAL Media</span><h3>Redes sociales<br>y contenido.</h3></div>
             </article>
             <article class="svc-card">
-                <div class="svc-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=85" alt="VISUAL Events" loading="lazy">
-                </div>
-                <div class="svc-body">
-                    <span class="svc-tag">VISUAL Events</span>
-                    <h3>Producción<br>audiovisual.</h3>
-                </div>
+                <div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=85" alt="VISUAL Events" loading="lazy"></div>
+                <div class="svc-body"><span class="svc-tag">VISUAL Events</span><h3>Producción<br>audiovisual.</h3></div>
             </article>
             <article class="svc-card">
-                <div class="svc-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=85" alt="VISUAL Web" loading="lazy">
-                </div>
-                <div class="svc-body">
-                    <span class="svc-tag">VISUAL Web</span>
-                    <h3>Desarrollo<br>web a medida.</h3>
-                </div>
+                <div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=85" alt="VISUAL Web" loading="lazy"></div>
+                <div class="svc-body"><span class="svc-tag">VISUAL Web</span><h3>Desarrollo<br>web a medida.</h3></div>
             </article>
             <article class="svc-card">
-                <div class="svc-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=85" alt="VISUAL Extras" loading="lazy">
-                </div>
-                <div class="svc-body">
-                    <span class="svc-tag">VISUAL Extras</span>
-                    <h3>Branding<br>y diseño.</h3>
-                </div>
-            </article>
-            <!-- duplicate set for seamless loop -->
-            <article class="svc-card" aria-hidden="true">
-                <div class="svc-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=85" alt="" loading="lazy">
-                </div>
-                <div class="svc-body">
-                    <span class="svc-tag">VISUAL Media</span>
-                    <h3>Redes sociales<br>y contenido.</h3>
-                </div>
+                <div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=85" alt="VISUAL Extras" loading="lazy"></div>
+                <div class="svc-body"><span class="svc-tag">VISUAL Extras</span><h3>Branding<br>y diseño.</h3></div>
             </article>
             <article class="svc-card" aria-hidden="true">
-                <div class="svc-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=85" alt="" loading="lazy">
-                </div>
-                <div class="svc-body">
-                    <span class="svc-tag">VISUAL Events</span>
-                    <h3>Producción<br>audiovisual.</h3>
-                </div>
+                <div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=85" alt="" loading="lazy"></div>
+                <div class="svc-body"><span class="svc-tag">VISUAL Media</span><h3>Redes sociales<br>y contenido.</h3></div>
             </article>
             <article class="svc-card" aria-hidden="true">
-                <div class="svc-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=85" alt="" loading="lazy">
-                </div>
-                <div class="svc-body">
-                    <span class="svc-tag">VISUAL Web</span>
-                    <h3>Desarrollo<br>web a medida.</h3>
-                </div>
+                <div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=85" alt="" loading="lazy"></div>
+                <div class="svc-body"><span class="svc-tag">VISUAL Events</span><h3>Producción<br>audiovisual.</h3></div>
             </article>
             <article class="svc-card" aria-hidden="true">
-                <div class="svc-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=85" alt="" loading="lazy">
-                </div>
-                <div class="svc-body">
-                    <span class="svc-tag">VISUAL Extras</span>
-                    <h3>Branding<br>y diseño.</h3>
-                </div>
+                <div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=85" alt="" loading="lazy"></div>
+                <div class="svc-body"><span class="svc-tag">VISUAL Web</span><h3>Desarrollo<br>web a medida.</h3></div>
+            </article>
+            <article class="svc-card" aria-hidden="true">
+                <div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=85" alt="" loading="lazy"></div>
+                <div class="svc-body"><span class="svc-tag">VISUAL Extras</span><h3>Branding<br>y diseño.</h3></div>
             </article>
         </div>
     </div>
+    <div class="reveal" style="text-align:center;margin-top:44px;">
+        <a href="servicios.html" class="btn-ghost">Ver todos los servicios</a>
+    </div>
 </section>
 
-<!-- ═══ 3. PORTAFOLIO ═══ -->
-<section class="portfolio" id="portafolio">
-    <div class="section-head">
+<!-- PORTAFOLIO HIGHLIGHTS -->
+<section class="wrap" style="background:var(--bg-mid);">
+    <div class="section-head center">
         <span class="section-label reveal">— Portafolio</span>
-        <h2 class="section-title reveal">Trabajo que<br><span class="accent-teal">habla.</span></h2>
+        <h2 class="section-title reveal">Trabajo que <span class="accent-gold">habla.</span></h2>
+        <p class="section-sub reveal">Marcas, instituciones y negocios que crecieron con nuestro contenido y desarrollo web.</p>
     </div>
-    <div class="pf-grid">
-        <a href="https://drive.google.com/file/d/1QRY2ei-QSIBiEEDceiCT1iuEoaemOcUo/view?usp=sharing" target="_blank" rel="noopener" class="pf-card reveal">
-            <div class="pf-card-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            </div>
-            <h3>Portafolio Web</h3>
-            <p>Sitios, landing pages y tiendas online.</p>
-            <span class="pf-action">Ver proyectos
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
-        </a>
-        <a href="https://drive.google.com/file/d/16lAPgqClzNE5NARHR8I9F7teMIC7RHc4/view?usp=sharing" target="_blank" rel="noopener" class="pf-card pf-card--gold reveal">
-            <div class="pf-card-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-            </div>
-            <h3>Portafolio Redes</h3>
-            <p>Estrategia visual y campañas digitales.</p>
-            <span class="pf-action">Ver proyectos
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
-        </a>
+    <div class="webgrid reveal">
+        <div class="webcard">
+            <div class="webframe"><div class="webframe-shot"><img src="assets/portfolio/case-impacto-a.jpg" alt="Revista Impacto Evangelístico" loading="lazy"></div></div>
+            <div class="webcard-body"><span class="webcard-type">Redes · Comunidad global</span><h3>Revista Impacto Evangelístico</h3><p>De 0 a <strong style="color:var(--text)">+802K seguidores</strong> y cobertura audiovisual de eventos internacionales.</p></div>
+        </div>
+        <div class="webcard">
+            <div class="webframe"><div class="webframe-shot"><img src="assets/portfolio/web-perucraft.jpg" alt="Perú Crafted Experiences" loading="lazy"></div></div>
+            <div class="webcard-body"><span class="webcard-type">Web · Turismo boutique</span><h3>Perú Crafted Experiences</h3><p>Sitio de experiencias de viaje a medida, con narrativa visual y enfoque en conversión.</p></div>
+        </div>
+    </div>
+    <div class="reveal" style="text-align:center;margin-top:44px;">
+        <a href="portafolio.html" class="btn-primary">Ver todo el portafolio</a>
     </div>
 </section>
 
-<!-- ═══ 4. PAQUETES ═══ -->
-<section class="packages" id="paquetes">
-    <div class="section-head">
-        <span class="section-label reveal">— Planes</span>
-        <h2 class="section-title reveal">Inversión que<br><span class="accent-gold">transforma.</span></h2>
-    </div>
 
-    <input type="radio" name="pkg-tab" id="pkg-tab-redes" class="pkg-radio" checked>
-    <input type="radio" name="pkg-tab" id="pkg-tab-web" class="pkg-radio">
-    <div class="pkg-toggle">
-        <label for="pkg-tab-redes" class="pkg-toggle-btn">Redes &amp; Contenido</label>
-        <label for="pkg-tab-web" class="pkg-toggle-btn">Desarrollo Web</label>
-    </div>
-
-    <!-- REDES -->
-    <div class="packages-grid pkg-panel" id="pkg-redes">
-        <div class="pkg-card">
-            <span class="pkg-tier">START</span>
-            <div class="pkg-price">S/ <strong>1,490</strong><span>/mes</span></div>
-            <h3>Presencia y consistencia</h3>
-            <ul>
-                <li>2 redes principales</li>
-                <li>10 piezas gráficas</li>
-                <li>4 reels esenciales</li>
-                <li>Reporte mensual</li>
-            </ul>
-            <a href="#contacto" class="btn-ghost pkg-btn">Empezar</a>
+<!-- FUNNEL -->
+<section class="funnel reveal">
+    <div class="funnel-inner">
+        <span class="funnel-kicker">Diagnóstico gratuito</span>
+        <h2>Hagamos que tu marca entre por los ojos.</h2>
+        <p>Cuéntanos sobre tu marca y te preparamos un plan de contenido, web o branding a tu medida — sin costo y sin compromiso.</p>
+        <div class="hero-ctas">
+            <a href="contacto.html" class="btn-primary">Agendar diagnóstico gratuito</a>
+            <a href="servicios.html" class="btn-ghost">Ver planes</a>
         </div>
-        <div class="pkg-card pkg-featured">
-            <span class="pkg-badge">Más popular</span>
-            <span class="pkg-tier">PRO GROWTH</span>
-            <div class="pkg-price">S/ <strong>2,990</strong><span>/mes</span></div>
-            <h3>Tráfico, leads y ventas</h3>
-            <ul>
-                <li>Hasta 3 redes</li>
-                <li>16 piezas estratégicas</li>
-                <li>8 reels con gancho</li>
-                <li>1 sesión audiovisual</li>
-            </ul>
-            <a href="#contacto" class="btn-primary pkg-btn">Empezar</a>
-        </div>
-        <div class="pkg-card">
-            <span class="pkg-tier">ELITE BRAND</span>
-            <div class="pkg-price">S/ <strong>5,800</strong><span>/mes</span></div>
-            <h3>Posicionamiento omnicanal</h3>
-            <ul>
-                <li>Multiplataforma</li>
-                <li>Hasta 25 piezas</li>
-                <li>16 reels premium</li>
-                <li>Dashboard en vivo</li>
-            </ul>
-            <a href="#contacto" class="btn-ghost pkg-btn">Empezar</a>
-        </div>
-    </div>
-
-    <!-- DESARROLLO WEB -->
-    <div class="packages-grid pkg-panel cols-4" id="pkg-web">
-        <div class="pkg-card">
-            <span class="pkg-tier">STARTER</span>
-            <h3>Landing Page Profesional</h3>
-            <div class="pkg-price">S/ <strong>1,990</strong></div>
-            <p class="pkg-meta">Pago único · Entrega en 7 días</p>
-            <p class="pkg-desc">Para emprendedores y profesionales independientes</p>
-            <ul>
-                <li>Landing page de alta conversión</li>
-                <li>Diseño UI/UX personalizado</li>
-                <li>Formulario conectado a WhatsApp</li>
-                <li>Totalmente responsive</li>
-                <li>SEO básico optimizado</li>
-                <li>Optimización de velocidad</li>
-                <li>Google Analytics</li>
-                <li>Google Maps integrado</li>
-                <li>1 ronda de ajustes</li>
-            </ul>
-            <a href="#contacto" class="btn-ghost pkg-btn">Solicitar ahora</a>
-        </div>
-        <div class="pkg-card pkg-featured">
-            <span class="pkg-badge">Más solicitado</span>
-            <span class="pkg-tier">BUSINESS</span>
-            <h3>Sitio Web Corporativo</h3>
-            <div class="pkg-price">S/ <strong>4,490</strong></div>
-            <p class="pkg-meta">Pago único · Entrega en 14 días</p>
-            <p class="pkg-desc">Para empresas que buscan fortalecer su imagen corporativa</p>
-            <ul>
-                <li>Hasta 8 páginas</li>
-                <li>Diseño UI/UX premium</li>
-                <li>Sitio corporativo</li>
-                <li>CMS autoadministrable</li>
-                <li>Portafolio de proyectos</li>
-                <li>Formularios avanzados</li>
-                <li>SEO On-Page completo</li>
-                <li>Integración WhatsApp</li>
-                <li>Google Analytics</li>
-                <li>Capacitación de uso</li>
-                <li>2 rondas de ajustes</li>
-            </ul>
-            <a href="#contacto" class="btn-primary pkg-btn">Quiero mi sitio</a>
-        </div>
-        <div class="pkg-card">
-            <span class="pkg-tier">GROWTH</span>
-            <h3>Web + Automatización</h3>
-            <div class="pkg-price">S/ <strong>6,990</strong></div>
-            <p class="pkg-meta">Pago único · Entrega en 21 días</p>
-            <p class="pkg-desc">Para empresas que desean optimizar procesos y gestión comercial</p>
-            <ul>
-                <li>Todo lo de Business</li>
-                <li>Automatización de formularios</li>
-                <li>Integración con CRM</li>
-                <li>Correos automáticos</li>
-                <li>Dashboard de métricas</li>
-                <li>Chat inteligente</li>
-                <li>Integraciones con IA</li>
-                <li>SEO avanzado</li>
-                <li>Optimización de conversión</li>
-                <li>3 rondas de ajustes</li>
-            </ul>
-            <a href="#contacto" class="btn-ghost pkg-btn">Quiero crecer</a>
-        </div>
-        <div class="pkg-card">
-            <span class="pkg-tier">ECOMMERCE PRO</span>
-            <h3>Tienda Online Profesional</h3>
-            <div class="pkg-price">S/ <strong>8,490</strong></div>
-            <p class="pkg-meta">Pago único · Entrega en 30 días</p>
-            <p class="pkg-desc">Para empresas que desean vender online</p>
-            <ul>
-                <li>Tienda online completa</li>
-                <li>Diseño personalizado</li>
-                <li>Catálogo hasta 50 productos</li>
-                <li>Culqi + Mercado Pago</li>
-                <li>Gestión de inventario</li>
-                <li>Panel de pedidos</li>
-                <li>Cupones y descuentos</li>
-                <li>SEO para productos</li>
-                <li>Analytics Ecommerce</li>
-                <li>Capacitación de uso</li>
-                <li>30 días de soporte</li>
-            </ul>
-            <a href="#contacto" class="btn-ghost pkg-btn">Vender online</a>
-        </div>
+        <p class="funnel-note">Respuesta en menos de <strong>24 horas</strong> · Sin compromiso · Atención directa con los fundadores.</p>
     </div>
 </section>
 
-<!-- ═══ 5. CONTACTO ═══ -->
-<section class="contact" id="contacto">
-    <div class="contact-info reveal">
-        <span class="section-label">— Contacto</span>
-        <h2 class="contact-title">Conversemos<br>sobre tu <span class="accent-gold">marca.</span></h2>
-        <div class="contact-details">
-            <a href="mailto:administracion@visualgroup.net" class="cd-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                administracion@visualgroup.net
-            </a>
-            <a href="https://wa.me/51981218584" target="_blank" rel="noopener" class="cd-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-                +51 981 218 584
-            </a>
-            <span class="cd-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                Lima, Perú
-            </span>
-        </div>
-    </div>
-    <form class="contact-form reveal" id="contact-form" action="https://formsubmit.co/administracion@visualgroup.net" method="POST" novalidate>
-        <input type="hidden" name="_subject" value="Nuevo contacto desde VISUAL Group Web">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <input class="f-input" type="text" name="nombre" id="f-nombre" placeholder="Nombre" required>
-        <input class="f-input" type="email" name="correo" placeholder="Correo" required>
-        <select class="f-input f-select" name="servicio" id="f-servicio">
-            <option value="">Servicio de interés</option>
-            <option>VISUAL Media</option>
-            <option>VISUAL Events</option>
-            <option>VISUAL Web</option>
-            <option>VISUAL Extras</option>
-            <option>Plan integral</option>
-        </select>
-        <textarea class="f-input f-textarea" name="mensaje" id="f-mensaje" placeholder="Cuéntanos sobre tu proyecto" rows="4"></textarea>
-        <div class="form-status" id="form-status" aria-live="polite"></div>
-        <button type="submit" class="btn-primary form-submit">Enviar mensaje</button>
-    </form>
-</section>
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -441,22 +212,58 @@
         <img src="logo_visual.png" alt="VISUAL Group" class="footer-logo">
         <p class="footer-copy">© 2026 VISUAL Group — Donde todo entra por los ojos.</p>
         <div class="footer-links">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="portafolio.html">Portafolio</a>
             <a href="mailto:administracion@visualgroup.net">administracion@visualgroup.net</a>
-            <a href="https://wa.me/51981218584" target="_blank" rel="noopener">+51 981 218 584</a>
+            <a href="https://wa.me/51912461505" target="_blank" rel="noopener">+51 912 461 505</a>
         </div>
     </div>
 </footer>
 
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/51981218584?text=Hola%2C%20me%20comunico%20desde%20visualgroup.net.%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20VISUAL%20Group." target="_blank" rel="noopener" class="wa-float" id="wa-float" aria-label="WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor" class="wa-svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    <div class="wa-pulse"></div>
-</a>
+<!-- ═══ WIDGET WHATSAPP · RAQUEL ═══ -->
+<div class="wa-widget" id="wa-widget">
+    <div class="wa-teaser" id="wa-teaser">
+        <button class="wa-teaser-x" id="wa-teaser-x" aria-label="Cerrar aviso">✕</button>
+        <span class="wa-teaser-name">Raquel · VISUAL Group</span>
+        ¡Hola! 👋 ¿Quieres que tu marca <strong>entre por los ojos</strong>? Escríbeme y te armo un plan. 💬
+    </div>
+
+    <div class="wa-panel" id="wa-panel" role="dialog" aria-label="Chat con Raquel de VISUAL Group">
+        <div class="wa-head">
+            <img src="assets/raquel.svg" alt="Raquel, asesora de VISUAL Group" class="wa-head-av">
+            <div class="wa-head-meta">
+                <div class="wa-head-name">Raquel</div>
+                <div class="wa-head-sub"><span class="wa-online-dot"></span> Asesora VISUAL · En línea</div>
+            </div>
+            <button class="wa-head-x" id="wa-head-x" aria-label="Cerrar chat">✕</button>
+        </div>
+        <div class="wa-body">
+            <div class="wa-msg">¡Hola! 👋 Soy <strong>Raquel</strong>, del equipo de VISUAL Group.<span class="wa-time">En línea</span></div>
+            <div class="wa-msg">Contamos con planes de <strong>redes, reels, web y branding</strong> para hacer crecer tu marca. ✨<span class="wa-time">En línea</span></div>
+            <div class="wa-msg">Cuéntame qué necesitas y te preparo una propuesta a tu medida. ¿Te ayudo por WhatsApp ahora? 💬<span class="wa-time">En línea</span></div>
+        </div>
+        <div class="wa-quick" id="wa-quick">
+            <button data-msg="Hola Raquel, me interesa la gestión de redes y contenido de VISUAL Group.">Redes & contenido</button>
+            <button data-msg="Hola Raquel, quiero una página web o tienda online con VISUAL Group.">Página web</button>
+            <button data-msg="Hola Raquel, quisiera una cotización de VISUAL Group.">Cotización</button>
+        </div>
+        <div class="wa-foot">
+            <a class="wa-cta" id="wa-cta" href="https://wa.me/51912461505?text=Hola%2C%20me%20comunico%20desde%20visualgroup.net.%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20VISUAL%20Group." target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> Escribirle a Raquel
+            </a>
+        </div>
+    </div>
+
+    <a href="https://wa.me/51912461505?text=Hola%2C%20me%20comunico%20desde%20visualgroup.net.%20Me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20VISUAL%20Group." class="wa-float" id="wa-launcher" target="_blank" rel="noopener" aria-label="Abrir chat de WhatsApp con Raquel">
+        <span class="wa-svg"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span>
+        <div class="wa-pulse"></div>
+    </a>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.0.42/dist/lenis.min.js"></script>
 <script src="script.js"></script>
 <script>
-  /* Failsafe: if script.js fails to load, still unlock the page after 3.8s */
   setTimeout(function () {
     document.body.classList.remove("is-loading");
     var p = document.getElementById("preloader");

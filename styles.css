@@ -1804,6 +1804,10 @@ body.is-loading { overflow: hidden; }
   position: absolute;
   bottom: 78px; right: 0;
   width: 340px; max-width: calc(100vw - 40px);
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 170px);
+  max-height: calc(100dvh - 170px);
   border-radius: 20px;
   overflow: hidden;
   background: #0b141a;
@@ -1813,6 +1817,7 @@ body.is-loading { overflow: hidden; }
   opacity: 0; visibility: hidden; pointer-events: none;
   transition: opacity .3s cubic-bezier(.22,1,.36,1), transform .3s cubic-bezier(.22,1,.36,1), visibility .3s;
 }
+.wa-head, .wa-quick, .wa-foot { flex-shrink: 0; }
 .wa-panel.open { opacity: 1; visibility: visible; transform: translateY(0) scale(1); pointer-events: auto; }
 
 .wa-head {
@@ -1836,7 +1841,10 @@ body.is-loading { overflow: hidden; }
 
 .wa-body {
   padding: 18px 15px 14px;
-  min-height: 150px;
+  min-height: 120px;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   background-color: #0b141a;
   background-image:
     radial-gradient(rgba(255,255,255,.03) 1px, transparent 1px);
@@ -1959,4 +1967,48 @@ body.is-loading { overflow: hidden; }
 @media (max-width:768px){
   .pricing-tabs { width:100%; }
   .pricing-tab-btn { flex:1 1 44%; padding:0 10px; font-size:12.5px; }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ══  MARCA · ISOTIPO + WORDMARK "VISUAL Group"  ══
+   ═══════════════════════════════════════════════════════════════ */
+.nav-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.nav-logo-mark { height: 42px; width: 42px; flex-shrink: 0; display: block; }
+.nav-logo-word {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: 19px;
+  letter-spacing: .4px;
+  line-height: 1;
+  color: var(--text);
+  white-space: nowrap;
+}
+.nav-logo-word span { color: var(--gold); font-weight: 700; }
+
+/* Footer lockup */
+.footer-brand { display: inline-flex; align-items: center; gap: 9px; text-decoration: none; }
+.footer-logo-mark { height: 34px; width: 34px; flex-shrink: 0; opacity: .95; }
+.footer-word {
+  font-family: "Syne", sans-serif; font-weight: 800; font-size: 16px;
+  letter-spacing: .3px; color: var(--text); line-height: 1;
+}
+.footer-word span { color: var(--gold); font-weight: 700; }
+
+/* Preloader lockup */
+.pl-logo { display: inline-flex; align-items: center; gap: 10px; width: auto; height: auto; }
+.pl-logo-mark { height: 40px; width: 40px; flex-shrink: 0; }
+.pl-logo-word {
+  font-family: "Syne", sans-serif; font-weight: 800; font-size: 21px;
+  letter-spacing: .4px; color: var(--text); line-height: 1;
+}
+.pl-logo-word span { color: var(--gold); font-weight: 700; }
+
+@media (max-width: 480px) {
+  .nav-logo-mark { height: 38px; width: 38px; }
+  .nav-logo-word { font-size: 17px; }
 }

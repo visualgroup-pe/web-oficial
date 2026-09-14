@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Raquel, asesora de VISUAL Group">
+  <defs>
+    <radialGradient id="rqBg" cx="50%" cy="34%" r="78%">
+      <stop offset="0%" stop-color="#123156"/>
+      <stop offset="55%" stop-color="#0D1E3A"/>
+      <stop offset="100%" stop-color="#091629"/>
+    </radialGradient>
+    <linearGradient id="rqPolo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12294A"/>
+      <stop offset="100%" stop-color="#0B1D38"/>
+    </linearGradient>
+    <linearGradient id="rqHair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a2a20"/>
+      <stop offset="100%" stop-color="#20140d"/>
+    </linearGradient>
+    <linearGradient id="rqSkin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2c9a6"/>
+      <stop offset="100%" stop-color="#e3b088"/>
+    </linearGradient>
+    <linearGradient id="rqGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e7cf86"/>
+      <stop offset="50%" stop-color="#C8A040"/>
+      <stop offset="100%" stop-color="#9c7a2c"/>
+    </linearGradient>
+    <clipPath id="rqClip"><circle cx="200" cy="200" r="200"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#rqClip)">
+    <rect width="400" height="400" fill="url(#rqBg)"/>
+    <!-- soft glow orbs -->
+    <circle cx="72" cy="86" r="120" fill="#2888A2" opacity="0.14"/>
+    <circle cx="330" cy="120" r="120" fill="#C8A040" opacity="0.13"/>
+
+    <!-- shoulders / polo -->
+    <path d="M52 400 C60 300 120 262 200 262 C280 262 340 300 348 400 Z" fill="url(#rqPolo)"/>
+    <!-- polo collar -->
+    <path d="M168 268 L200 300 L232 268 L214 258 L200 270 L186 258 Z" fill="#1b3557"/>
+    <path d="M168 268 L200 300 L232 268" fill="none" stroke="#24456e" stroke-width="3"/>
+    <!-- gold placket -->
+    <path d="M196 300 L204 300 L206 400 L194 400 Z" fill="url(#rqGold)" opacity="0.9"/>
+    <circle cx="200" cy="330" r="3.4" fill="#0B1D38"/>
+    <circle cx="200" cy="356" r="3.4" fill="#0B1D38"/>
+    <!-- VISUAL group logo tag on polo -->
+    <g transform="translate(250 318)">
+      <text x="0" y="0" font-family="'Syne','Segoe UI',sans-serif" font-size="15" font-weight="800" fill="url(#rqGold)" letter-spacing="0.5">VISUAL</text>
+      <text x="1" y="13" font-family="'Segoe UI',sans-serif" font-size="7.5" font-weight="600" fill="#8BA4B8" letter-spacing="2.4">GROUP</text>
+    </g>
+
+    <!-- neck -->
+    <path d="M180 232 C180 262 180 268 200 276 C220 268 220 262 220 232 Z" fill="#e0aa80"/>
+    <!-- head -->
+    <path d="M138 176 C138 122 162 92 200 92 C238 92 262 122 262 176 C262 220 236 250 200 250 C164 250 138 220 138 176 Z" fill="url(#rqSkin)"/>
+    <!-- ears -->
+    <circle cx="139" cy="182" r="11" fill="#e3b088"/>
+    <circle cx="261" cy="182" r="11" fill="#e3b088"/>
+
+    <!-- hair back -->
+    <path d="M126 196 C120 120 158 78 200 78 C242 78 280 120 274 196 C270 168 262 150 252 140 C258 120 246 150 236 140 C210 118 190 118 164 140 C154 150 146 120 152 140 C138 150 130 168 126 196 Z" fill="url(#rqHair)"/>
+    <!-- hair side strands -->
+    <path d="M132 190 C126 250 140 286 150 300 L150 210 C146 200 138 196 132 190 Z" fill="url(#rqHair)"/>
+    <path d="M268 190 C274 250 260 286 250 300 L250 210 C254 200 262 196 268 190 Z" fill="url(#rqHair)"/>
+    <!-- fringe -->
+    <path d="M150 150 C158 128 178 120 200 120 C222 120 242 128 250 150 C232 140 214 138 200 138 C186 138 168 140 150 150 Z" fill="url(#rqHair)"/>
+
+    <!-- eyebrows -->
+    <path d="M158 168 q16 -9 32 -1" fill="none" stroke="#3a2a20" stroke-width="4" stroke-linecap="round"/>
+    <path d="M210 167 q16 -8 32 1" fill="none" stroke="#3a2a20" stroke-width="4" stroke-linecap="round"/>
+    <!-- eyes -->
+    <ellipse cx="174" cy="184" rx="7.5" ry="8.5" fill="#fff"/>
+    <ellipse cx="226" cy="184" rx="7.5" ry="8.5" fill="#fff"/>
+    <circle cx="175" cy="185" r="4.4" fill="#3a2a20"/>
+    <circle cx="227" cy="185" r="4.4" fill="#3a2a20"/>
+    <circle cx="176.6" cy="183.4" r="1.5" fill="#fff"/>
+    <circle cx="228.6" cy="183.4" r="1.5" fill="#fff"/>
+    <!-- nose -->
+    <path d="M200 190 l-5 16 q5 4 10 0" fill="none" stroke="#d69a70" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- smile -->
+    <path d="M180 214 q20 20 40 0" fill="none" stroke="#c67f5e" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M184 216 q16 12 32 0 q-16 6 -32 0 Z" fill="#fff"/>
+    <!-- cheeks -->
+    <circle cx="164" cy="204" r="8" fill="#f0a789" opacity="0.5"/>
+    <circle cx="236" cy="204" r="8" fill="#f0a789" opacity="0.5"/>
+
+    <!-- headset -->
+    <path d="M134 182 C130 120 168 96 200 96 C232 96 270 120 266 182" fill="none" stroke="#0B1D38" stroke-width="8" stroke-linecap="round"/>
+    <rect x="124" y="176" width="16" height="26" rx="7" fill="#0B1D38"/>
+    <rect x="260" y="176" width="16" height="26" rx="7" fill="#0B1D38"/>
+    <path d="M132 200 C132 232 150 244 168 236" fill="none" stroke="#0B1D38" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="170" cy="234" r="7" fill="url(#rqGold)"/>
+  </g>
+  <circle cx="200" cy="200" r="198" fill="none" stroke="#C8A040" stroke-width="4" opacity="0.55"/>
+</svg>

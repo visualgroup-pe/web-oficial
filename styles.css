@@ -2012,3 +2012,43 @@ body.is-loading { overflow: hidden; }
   .nav-logo-mark { height: 38px; width: 38px; }
   .nav-logo-word { font-size: 17px; }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   ══  BOTONES DE REDES SOCIALES  ══
+   ═══════════════════════════════════════════════════════════════ */
+.soc {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--border-hi);
+  color: var(--muted);
+  background: transparent;
+  transition: color .22s, border-color .22s, background .22s, transform .22s;
+}
+.soc svg { width: 18px; height: 18px; display: block; }
+.soc:hover {
+  color: var(--text);
+  border-color: var(--gold);
+  background: var(--gold-dim);
+  transform: translateY(-2px);
+}
+
+/* Navbar (desktop) */
+.nav-social { display: inline-flex; align-items: center; gap: 8px; }
+.nav-social .soc { width: 34px; height: 34px; }
+.nav-social .soc svg { width: 16px; height: 16px; }
+
+/* Mobile menu */
+.mobile-social { display: flex; gap: 12px; margin-top: 24px; }
+.mobile-social .soc { width: 48px; height: 48px; }
+.mobile-social .soc svg { width: 22px; height: 22px; }
+.mobile-social .soc:hover { border-color: #25D366; background: rgba(37,211,102,.14); color: #fff; }
+
+/* Footer */
+.footer-social { display: inline-flex; align-items: center; gap: 10px; }
+
+@media (max-width: 768px) {
+  .nav-social { display: none; }
+}

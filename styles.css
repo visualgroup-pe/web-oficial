@@ -2131,3 +2131,7 @@ body.is-loading { overflow: hidden; }
 /* Logo vertical (Perú Craft): menos padding y que llene el alto para verse más grande */
 .logo-chip--tall { padding: 6px 20px; }
 .logo-chip--tall img { max-height: 100%; }
+
+/* Logo con fondo propio (Obimedic): tarjeta a sangre completa */
+.logo-chip--full { padding: 0; background: transparent; overflow: hidden; }
+.logo-chip--full img { width: 100%; height: 100%; max-width: none; max-height: none; object-fit: cover; }

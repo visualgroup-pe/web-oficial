@@ -2127,3 +2127,7 @@ body.is-loading { overflow: hidden; }
 }
 .founder:nth-child(2) .founder-title { color: var(--gold); }
 .founder-body p:last-child { font-size: 14.5px; color: var(--muted); line-height: 1.65; }
+
+/* Logo vertical (Perú Craft): menos padding y que llene el alto para verse más grande */
+.logo-chip--tall { padding: 6px 20px; }
+.logo-chip--tall img { max-height: 100%; }

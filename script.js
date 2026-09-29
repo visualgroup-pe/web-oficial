@@ -3,7 +3,7 @@
    ═══════════════════════════════════════════════════════ */
 
 /* Número oficial de WhatsApp */
-var WA_NUMBER = "51912461505";
+var WA_NUMBER = "51924171401";
 var WA_DEFAULT = "Hola, me comunico desde visualgroup.net. Me interesa conocer más sobre los servicios de VISUAL Group.";
 function waLink(msg) {
   return "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg || WA_DEFAULT);

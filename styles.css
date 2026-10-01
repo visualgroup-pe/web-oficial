@@ -1897,6 +1897,50 @@ body.is-loading { overflow: hidden; }
 /* launcher reuses .wa-float positioning but relative to widget */
 .wa-widget .wa-float { position: relative; right: auto; bottom: auto; }
 
+/* ─── CHATBOT · asistente conversacional de Raquel ─── */
+.wa-msg--user {
+  margin-left: auto;
+  background: #005c4b; color: #e9edef;
+  border-radius: 12px 4px 12px 12px;
+}
+.wa-msg a { color: #7ef0a2; font-weight: 600; text-decoration: underline; }
+.wa-msg--user .wa-time { color: #a7d7c5; }
+.wa-msg strong { color: #ffffff; }
+
+.wa-quick { max-height: 92px; overflow-y: auto; }
+.wa-quick:empty { display: none; }
+.wa-quick button {
+  cursor: pointer; line-height: 1.25; text-align: left;
+}
+.wa-quick button.wa-chip-wa {
+  background: #25D366; color: #04120a; border-color: #25D366; font-weight: 700;
+}
+.wa-quick button.wa-chip-wa:hover { background: #20bd5a; color: #04120a; }
+
+.wa-foot { display: flex; flex-direction: column; gap: 10px; }
+.wa-inputbar { display: flex; align-items: center; gap: 8px; }
+.wa-input {
+  flex: 1; min-width: 0; height: 44px;
+  border-radius: 100px; border: 1px solid #2a3942;
+  background: #1f2c33; color: #e9edef;
+  padding: 0 16px; font-size: 13.5px; font-family: inherit;
+  outline: none; transition: border-color .2s;
+}
+.wa-input::placeholder { color: #8aa0ac; }
+.wa-input:focus { border-color: #25D366; }
+.wa-send {
+  width: 44px; height: 44px; flex-shrink: 0;
+  border-radius: 50%; background: #25D366; color: #04120a;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: transform .18s, filter .18s;
+}
+.wa-send:hover { transform: scale(1.07); filter: brightness(1.04); }
+.wa-send:disabled { opacity: .5; cursor: default; transform: none; }
+.wa-send svg { width: 20px; height: 20px; }
+.wa-foot .wa-hint {
+  font-size: 10.5px; color: #6f8591; text-align: center; margin: -2px 0 0;
+}
+
 /* ─── RESPONSIVE (nuevos componentes) ─── */
 @media (max-width: 1100px) {
   .statband { grid-template-columns: repeat(2, 1fr); }

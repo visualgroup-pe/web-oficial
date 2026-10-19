@@ -158,7 +158,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
 
   /* ── atajos para derivar a WhatsApp con contexto ── */
   function waChip(label, msg) { return { t: label, wa: msg }; }
-  var ASESOR = waChip("💬 Hablar con una asesora", "Hola Raquel, quisiera hablar con una asesora de VISUAL Group.");
+  var ASESOR = waChip("💬 Hablar con un asesor", "Hola, quisiera hablar con un asesor de VISUAL Group.");
 
   /* ═══ BASE DE CONOCIMIENTO ═══
      Cada intención: kw (palabras clave), a (respuesta HTML), c (chips de seguimiento). */
@@ -166,7 +166,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     {
       id: "saludo",
       kw: ["hola", "buenas", "buenos dias", "buenas tardes", "buenas noches", "que tal", "hey", "holi", "saludos"],
-      a: "¡Hola! 👋 Soy <strong>Raquel</strong>, de VISUAL Group. Puedo contarte sobre nuestros <strong>servicios, precios, proyectos</strong> y ayudarte a dar el siguiente paso. ¿Qué te gustaría saber? 😊",
+      a: "¡Hola! 👋 Soy el <strong>Asesor VISUAL</strong>, de VISUAL Group. Puedo contarte sobre nuestros <strong>servicios, precios, proyectos</strong> y ayudarte a dar el siguiente paso. ¿Qué te gustaría saber? 😊",
       c: [{ t: "Ver servicios", q: "servicios" }, { t: "Precios y planes", q: "precios" }, { t: "Ver proyectos", q: "portafolio" }]
     },
     {
@@ -179,7 +179,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
       id: "precios",
       kw: ["precio", "precios", "cuanto cuesta", "cuanto sale", "costo", "costos", "tarifa", "tarifas", "plan", "planes", "paquete", "paquetes", "cotizacion", "presupuesto", "inversion", "vale", "cuanto"],
       a: "Con gusto 😊 Estos son nuestros rangos (en soles S/):<br><br>📱 <strong>Redes & contenido</strong> — desde <strong>S/ 849/mes</strong> (Start), S/ 1,149 (Mid), S/ 1,549 (Pro).<br>🚀 <strong>Redes + Ads</strong> — desde <strong>S/ 2,990/mes</strong> con community management y campañas.<br>💻 <strong>Web</strong> — Landing <strong>S/ 1,990</strong> · Sitio corporativo desde <strong>S/ 3,490</strong> · Tienda online desde <strong>S/ 6,490</strong> (pago único).<br>📸 <strong>Cobertura audiovisual</strong> — desde <strong>S/ 200</strong> por jornada.<br><br>👉 Mira el detalle en <a href=\"/servicios\">Servicios</a>. ¿Te preparo una propuesta a tu medida?",
-      c: [{ t: "Ver tabla completa", q: "__link:/servicios" }, waChip("💬 Cotizar por WhatsApp", "Hola Raquel, quisiera una cotización de VISUAL Group. Mi marca/negocio es:")]
+      c: [{ t: "Ver tabla completa", q: "__link:/servicios" }, waChip("💬 Cotizar por WhatsApp", "Hola, quisiera una cotización de VISUAL Group. Mi marca/negocio es:")]
     },
     {
       id: "redes",
@@ -197,19 +197,19 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
       id: "ads",
       kw: ["ads", "publicidad", "campana", "campanas", "pauta", "meta ads", "facebook ads", "anuncios", "pauta publicitaria", "performance"],
       a: "🚀 Gestionamos <strong>campañas de Ads</strong> en Meta (Facebook / Instagram) para traer tráfico, leads y ventas. Vienen dentro de nuestros <strong>planes Redes + Ads desde S/ 2,990/mes</strong>, con community management y reporte mensual.<br><br>¿Te interesa escalar con publicidad?",
-      c: [{ t: "Ver planes + Ads", q: "__link:/servicios" }, waChip("💬 Cotizar Ads", "Hola Raquel, me interesan los planes de redes + Ads de VISUAL Group.")]
+      c: [{ t: "Ver planes + Ads", q: "__link:/servicios" }, waChip("💬 Cotizar Ads", "Hola, me interesan los planes de redes + Ads de VISUAL Group.")]
     },
     {
       id: "web",
       kw: ["web", "pagina", "pagina web", "sitio", "sitio web", "landing", "tienda", "tienda online", "ecommerce", "e commerce", "online", "desarrollo web", "pagina de ventas"],
       a: "💻 Desarrollamos <strong>webs que venden</strong>:<br><br>• <strong>Landing page</strong> — S/ 1,990 (pago único)<br>• <strong>Sitio web corporativo</strong> — desde S/ 3,490<br>• <strong>Tienda online</strong> — desde S/ 6,490<br><br>Diseño UX/UI a medida, WhatsApp + redes, Google Maps y Analytics. ¿Qué tipo de web necesitas?",
-      c: [{ t: "Ver proyectos web", q: "__link:/portafolio" }, waChip("💬 Quiero mi web", "Hola Raquel, quiero cotizar una página web / tienda online con VISUAL Group.")]
+      c: [{ t: "Ver proyectos web", q: "__link:/portafolio" }, waChip("💬 Quiero mi web", "Hola, quiero cotizar una página web / tienda online con VISUAL Group.")]
     },
     {
       id: "cobertura",
       kw: ["cobertura", "foto", "fotos", "fotografia", "evento", "eventos", "sesion", "grabacion evento", "audiovisual", "filmacion"],
       a: "📸 Hacemos <strong>cobertura audiovisual</strong> de eventos y marcas, cotizada por jornada:<br><br>• <strong>Básica</strong> (1–2 h) — S/ 200–400<br>• <strong>Intermedia</strong> (3–5 h) — S/ 600–1,000<br>• <strong>Completa</strong> (6–8 h) — S/ 1,200–1,600<br><br>Incluye fotos editadas, reels e historias. ¿Para qué fecha lo necesitas?",
-      c: [waChip("💬 Reservar cobertura", "Hola Raquel, quiero reservar una cobertura audiovisual. La fecha/evento es:")]
+      c: [waChip("💬 Reservar cobertura", "Hola, quiero reservar una cobertura audiovisual. La fecha/evento es:")]
     },
     {
       id: "branding",
@@ -256,7 +256,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     {
       id: "pago",
       kw: ["pago", "pagos", "formas de pago", "factura", "facturacion", "boleta", "yape", "plin", "transferencia", "medios de pago"],
-      a: "💳 Manejamos distintas <strong>formas de pago</strong> y emitimos comprobante. Los planes de redes son mensuales, el desarrollo web es pago único y la cobertura por jornada. Una asesora te detalla las condiciones según tu caso 👇",
+      a: "💳 Manejamos distintas <strong>formas de pago</strong> y emitimos comprobante. Los planes de redes son mensuales, el desarrollo web es pago único y la cobertura por jornada. Un asesor te detalla las condiciones según tu caso 👇",
       c: [ASESOR]
     },
     {
@@ -268,25 +268,25 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     {
       id: "contratar",
       kw: ["contratar", "quiero empezar", "empezar", "comenzar", "contrato", "adquirir", "comprar", "si quiero", "me interesa", "quiero el plan", "como contrato"],
-      a: "¡Genial! 🙌 Me encanta. Para dejar todo listo y armar tu propuesta, te paso con una asesora por WhatsApp ahora mismo 👇",
-      c: [waChip("💬 Empezar por WhatsApp", "Hola Raquel, quiero empezar con VISUAL Group. Me interesa:")]
+      a: "¡Genial! 🙌 Me encanta. Para dejar todo listo y armar tu propuesta, te paso con un asesor por WhatsApp ahora mismo 👇",
+      c: [waChip("💬 Empezar por WhatsApp", "Hola, quiero empezar con VISUAL Group. Me interesa:")]
     },
     {
       id: "asesor",
       kw: ["asesor", "asesora", "humano", "persona", "hablar con alguien", "agente", "whatsapp", "representante", "ejecutivo", "atencion personal"],
-      a: "¡Claro! 💬 Te conecto con una asesora de VISUAL Group por WhatsApp para una atención personalizada 👇",
+      a: "¡Claro! 💬 Te conecto con un asesor de VISUAL Group por WhatsApp para una atención personalizada 👇",
       c: [ASESOR]
     },
     {
       id: "gracias",
       kw: ["gracias", "muchas gracias", "ok gracias", "genial gracias", "perfecto gracias"],
-      a: "¡Un gusto! 🙌 Aquí estaré para lo que necesites. Y si quieres avanzar, con un clic te paso con una asesora por WhatsApp. ✨",
+      a: "¡Un gusto! 🙌 Aquí estaré para lo que necesites. Y si quieres avanzar, con un clic te paso con un asesor por WhatsApp. ✨",
       c: [ASESOR, { t: "Ver servicios", q: "servicios" }]
     }
   ];
 
   var FALLBACK = {
-    a: "¡Buena pregunta! 🤔 No estoy segura de tener ese detalle aquí, pero una asesora te puede ayudar al instante por WhatsApp. También puedo contarte sobre nuestros servicios, precios o proyectos.",
+    a: "¡Buena pregunta! 🤔 No tengo ese detalle exacto aquí, pero un asesor te puede ayudar al instante por WhatsApp. También puedo contarte sobre nuestros servicios, precios o proyectos.",
     c: [ASESOR, { t: "Servicios", q: "servicios" }, { t: "Precios", q: "precios" }]
   };
 
@@ -314,7 +314,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     if (!body) return;
     var el = document.createElement("div");
     el.className = "wa-msg" + (who === "user" ? " wa-msg--user" : "");
-    el.innerHTML = html + '<span class="wa-time">' + (who === "user" ? "Tú" : "Raquel · ahora") + "</span>";
+    el.innerHTML = html + '<span class="wa-time">' + (who === "user" ? "Tú" : "Asesor VISUAL · ahora") + "</span>";
     body.appendChild(el);
     scrollDown();
   }
@@ -399,12 +399,12 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     bar.className = "wa-inputbar";
     bar.innerHTML =
       '<input type="text" class="wa-input" id="wa-input" autocomplete="off" ' +
-      'placeholder="Escribe tu pregunta…" aria-label="Escribe tu mensaje para Raquel">' +
+      'placeholder="Escribe tu pregunta…" aria-label="Escribe tu mensaje para el Asesor VISUAL">' +
       '<button type="button" class="wa-send" id="wa-send" aria-label="Enviar">' +
       '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></button>';
     var hint = document.createElement("p");
     hint.className = "wa-hint";
-    hint.textContent = "Respuestas al instante · o te paso con una asesora";
+    hint.textContent = "Respuestas al instante · o te paso con un asesor";
     foot.appendChild(bar);
     foot.appendChild(hint);
 

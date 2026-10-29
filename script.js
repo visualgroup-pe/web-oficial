@@ -9,6 +9,11 @@ function waLink(msg) {
   return "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg || WA_DEFAULT);
 }
 
+/* Endpoint de captura de leads (Google Apps Script → Google Sheets + correo).
+   Pega aquí la URL del Web App que termina en /exec. Si queda vacío, el
+   formulario usa el envío por correo de respaldo (FormSubmit). */
+var LEADS_ENDPOINT = "";
+
 /* ─── PRELOADER ─── */
 (function () {
   var pre = document.getElementById("preloader");
@@ -493,27 +498,37 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
 
     window.open(waLink(waMsg), "_blank", "noopener");
 
-    fetch(contactForm.action, {
-      method: "POST",
-      body: data,
-      headers: { "Accept": "application/json" }
-    })
-    .then(function (res) {
-      if (res.ok) {
-        if (formStatus) {
-          formStatus.className = "form-status success";
-          formStatus.textContent = "¡Mensaje enviado! Te contactaremos pronto.";
-        }
-        contactForm.reset();
-      } else {
-        throw new Error("server");
+    function showOk() {
+      if (formStatus) {
+        formStatus.className = "form-status success";
+        formStatus.textContent = "¡Mensaje enviado! Te contactaremos pronto.";
       }
-    })
-    .catch(function () {
+      contactForm.reset();
+    }
+    function showFallback() {
       if (formStatus) {
         formStatus.className = "form-status error";
         formStatus.textContent = "Abrimos WhatsApp con tu mensaje. Si prefieres, escríbenos a administracion@visualgroup.net";
       }
-    });
+    }
+
+    if (LEADS_ENDPOINT) {
+      /* Guarda el lead en Google Sheets y envía el correo vía Apps Script */
+      try { data.append("origen", window.location.href); } catch (e) {}
+      fetch(LEADS_ENDPOINT, { method: "POST", body: data, mode: "no-cors" })
+        .then(showOk)
+        .catch(showFallback);
+    } else {
+      /* Respaldo: envío por correo con FormSubmit */
+      fetch(contactForm.action, {
+        method: "POST",
+        body: data,
+        headers: { "Accept": "application/json" }
+      })
+      .then(function (res) {
+        if (res.ok) { showOk(); } else { throw new Error("server"); }
+      })
+      .catch(showFallback);
+    }
   });
 })();

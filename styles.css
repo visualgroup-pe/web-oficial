@@ -1726,7 +1726,10 @@ body.is-loading { overflow: hidden; }
   background: rgba(9,22,41,.7);
   padding: 5px 12px; border-radius: 100px;
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  display: block;
 }
+a.webframe-url { transition: color .2s, background .2s; }
+a.webframe-url:hover { color: var(--teal); background: rgba(40,136,162,.14); }
 .webframe-shot { position: relative; aspect-ratio: 16/10; overflow: hidden; }
 .webframe-shot img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
 .webcard:hover .webframe-shot img { transform: scale(1.05); }

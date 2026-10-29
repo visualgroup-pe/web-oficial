@@ -1649,38 +1649,40 @@ body.is-loading { overflow: hidden; }
 .case-gallery-label {
   font-size: 11px; font-weight: 600; letter-spacing: 2px;
   text-transform: uppercase; color: var(--muted);
-  margin: 0 0 12px;
+  margin: 0 0 12px; text-align: center;
 }
-.case-gallery-label + .case-gallery-label { margin-top: 26px; }
-/* Publicaciones completas (post = copy + contenido, sin recortar) */
+.case-gallery-label + .case-gallery-label { margin-top: 28px; }
+/* Publicaciones completas (post = copy + contenido, sin recortar) — compactas y centradas */
 .case-posts {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px;
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;
   align-items: start;
+  max-width: 600px; margin: 0 auto;
 }
 .case-posts img {
   width: 100%; height: auto; display: block;
-  border-radius: 14px; border: 1px solid var(--border);
-  box-shadow: 0 14px 34px rgba(0,0,0,.28);
+  border-radius: 12px; border: 1px solid var(--border);
+  box-shadow: 0 12px 30px rgba(0,0,0,.28);
   background: var(--bg-mid);
   transition: transform .4s ease;
 }
 .case-posts img:hover { transform: translateY(-4px); }
-/* Reels (9:16) alineados en una fila ordenada */
+/* Reels (9:16) centrados en una fila ordenada */
 .case-reels {
-  display: flex; flex-wrap: wrap; gap: 16px; margin-top: 16px;
+  display: flex; flex-wrap: wrap; gap: 16px; margin-top: 14px;
+  justify-content: center;
 }
 .case-reels img {
-  height: 340px; width: auto; display: block;
-  border-radius: 20px; border: 1px solid var(--border);
-  box-shadow: 0 14px 34px rgba(0,0,0,.28);
+  height: 250px; width: auto; display: block;
+  border-radius: 16px; border: 1px solid var(--border);
+  box-shadow: 0 12px 30px rgba(0,0,0,.28);
   background: var(--bg-mid);
   transition: transform .4s ease;
 }
 .case-reels img:hover { transform: translateY(-4px); }
 @media (max-width: 768px) {
-  .case-posts { grid-template-columns: 1fr; gap: 14px; max-width: 440px; }
-  .case-reels { gap: 12px; justify-content: center; }
-  .case-reels img { height: 280px; }
+  .case-posts { grid-template-columns: 1fr; gap: 14px; max-width: 340px; }
+  .case-reels { gap: 12px; }
+  .case-reels img { height: 230px; }
 }
 .case-tag {
   font-size: 11px; font-weight: 600; letter-spacing: 2px;

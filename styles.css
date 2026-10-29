@@ -1641,6 +1641,27 @@ body.is-loading { overflow: hidden; }
 }
 .case-media.solo { grid-template-columns: 1fr; }
 .case-media.solo img { aspect-ratio: 4/3; }
+
+/* Caso destacado: texto arriba + galería filmstrip (reels con sus vistas + coberturas) */
+.case--feature { display: block; }
+.case--feature .case-body { max-width: 820px; margin-bottom: 30px; }
+.case-gallery {
+  display: flex; flex-wrap: wrap; gap: 12px; align-items: stretch;
+}
+.case-gallery img {
+  height: 262px; width: auto; max-width: 100%;
+  object-fit: cover; display: block;
+  border-radius: 16px; border: 1px solid var(--border);
+  box-shadow: 0 14px 34px rgba(0,0,0,.28);
+  background: var(--bg-mid);
+  transition: transform .4s ease;
+}
+.case-gallery img:hover { transform: translateY(-4px); }
+.case-gallery img.reel { border-radius: 20px; }
+@media (max-width: 768px) {
+  .case-gallery { gap: 10px; justify-content: center; }
+  .case-gallery img { height: 230px; }
+}
 .case-tag {
   font-size: 11px; font-weight: 600; letter-spacing: 2px;
   text-transform: uppercase; color: var(--teal);

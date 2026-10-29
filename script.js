@@ -12,7 +12,7 @@ function waLink(msg) {
 /* Endpoint de captura de leads (Google Apps Script → Google Sheets + correo).
    Pega aquí la URL del Web App que termina en /exec. Si queda vacío, el
    formulario usa el envío por correo de respaldo (FormSubmit). */
-var LEADS_ENDPOINT = "";
+var LEADS_ENDPOINT = "https://script.google.com/macros/s/AKfycbyQwwVH-yDvvtR63v-af0bfjFH08zPKVTb6UB1WzUNelKBV4eaFeMUW-FtIqIqEF1Oj/exec";
 
 /* ─── PRELOADER ─── */
 (function () {

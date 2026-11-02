@@ -2570,3 +2570,29 @@ a.webframe-url:hover { color: var(--teal); background: rgba(40,136,162,.14); }
   .wl-feature:nth-child(even) .wl-feat-visual { order: 0; }
   .wl-feat-visual { aspect-ratio: 16/9; }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   ══  PULIDO MÓVIL · textos que no se corten y mejor apreciación  ══
+   ═══════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  /* Carruseles: degradado de borde más amplio para que las tarjetas
+     parciales se desvanezcan en vez de mostrar texto cortado */
+  .services-carousel, .logos {
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 16%, #000 84%, transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0, #000 16%, #000 84%, transparent 100%);
+  }
+  /* Etiqueta de sección del portafolio: permitir salto de línea */
+  .pf-section-label { flex-wrap: wrap; }
+  .pf-section-label span { white-space: normal; }
+}
+
+@media (max-width: 430px) {
+  /* Margen extra para la tipografía Syne (más ancha) en pantallas chicas */
+  .section-title { font-size: 29px; }
+  .page-hero h1  { font-size: 34px; }
+  .wl-hero h1    { font-size: 32px; }
+  .funnel h2     { font-size: 26px; }
+  .wl-hero-sub, .page-hero p { font-size: 16px; }
+  /* El copyright del footer puede ajustarse en varias líneas si hace falta */
+  .footer-copy { white-space: normal; line-height: 1.5; }
+}

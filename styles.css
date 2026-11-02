@@ -2530,6 +2530,8 @@ a.webframe-url:hover { color: var(--teal); background: rgba(40,136,162,.14); }
     linear-gradient(160deg, #0D1E3A, #091629);
 }
 .wl-feat-ic svg { width: 76px; height: 76px; color: var(--text); opacity: .95; }
+.wl-feat-art { width: 86%; max-width: 320px; }
+.wl-feat-art svg { width: 100%; height: auto; display: block; filter: drop-shadow(0 16px 32px rgba(0,0,0,.42)); }
 .wl-feat-tag {
   position: absolute; top: 14px; left: 14px;
   font-family: "Syne", sans-serif; font-weight: 800; font-size: 13px; letter-spacing: 1px;

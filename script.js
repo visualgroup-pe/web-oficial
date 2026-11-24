@@ -183,13 +183,13 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     {
       id: "precios",
       kw: ["precio", "precios", "cuanto cuesta", "cuanto sale", "costo", "costos", "tarifa", "tarifas", "plan", "planes", "paquete", "paquetes", "cotizacion", "presupuesto", "inversion", "vale", "cuanto"],
-      a: "Con gusto 😊 Estos son nuestros rangos (en soles S/):<br><br>📱 <strong>Redes & contenido</strong> — desde <strong>S/ 849/mes</strong> (Start), S/ 1,149 (Mid), S/ 1,549 (Pro).<br>🚀 <strong>Redes + Ads</strong> — desde <strong>S/ 2,990/mes</strong> con community management y campañas.<br>💻 <strong>Web</strong> — Landing <strong>S/ 1,990</strong> · Sitio corporativo desde <strong>S/ 3,490</strong> · Tienda online desde <strong>S/ 6,490</strong> (pago único).<br>📸 <strong>Cobertura audiovisual</strong> — desde <strong>S/ 200</strong> por jornada.<br><br>👉 Mira el detalle en <a href=\"/servicios\">Servicios</a>. ¿Te preparo una propuesta a tu medida?",
+      a: "Con gusto 😊 Estos son nuestros rangos (en soles S/):<br><br>📱 <strong>Redes & contenido</strong> — desde <strong>S/ 849/mes</strong> (Start), S/ 1,149 (Mid), S/ 1,549 (Pro).<br>🚀 <strong>Redes + Ads</strong> — desde <strong>S/ 3,990/mes</strong> con community management y campañas.<br>💻 <strong>Web</strong> — Landing <strong>S/ 1,990</strong> · Sitio corporativo desde <strong>S/ 3,490</strong> · Tienda online desde <strong>S/ 6,490</strong> (pago único).<br>📸 <strong>Cobertura audiovisual</strong> — desde <strong>S/ 200</strong> por jornada.<br><br>👉 Mira el detalle en <a href=\"/servicios\">Servicios</a>. ¿Te preparo una propuesta a tu medida?",
       c: [{ t: "Ver tabla completa", q: "__link:/servicios" }, waChip("💬 Cotizar por WhatsApp", "Hola, quisiera una cotización de VISUAL Group. Mi marca/negocio es:")]
     },
     {
       id: "redes",
       kw: ["redes", "red social", "redes sociales", "contenido", "community", "instagram", "tiktok", "social media", "publicaciones", "posts", "historias", "stories", "manejo de redes"],
-      a: "📱 Nuestra <strong>gestión de redes</strong> incluye reels, historias, flyers y carruseles con estrategia, copy y publicación. Los planes van <strong>desde S/ 849/mes</strong>, y los planes con <strong>Community Management + Ads</strong> desde S/ 2,990/mes.<br><br>Creamos contenido que conecta y hace crecer tu comunidad ✨. ¿Te armo un plan según tus metas?",
+      a: "📱 Nuestra <strong>gestión de redes</strong> incluye reels, historias, flyers y carruseles con estrategia, copy y publicación. Los planes van <strong>desde S/ 849/mes</strong>, y los planes con <strong>Community Management + Ads</strong> desde S/ 3,990/mes.<br><br>Creamos contenido que conecta y hace crecer tu comunidad ✨. ¿Te armo un plan según tus metas?",
       c: [{ t: "Ver planes", q: "__link:/servicios" }, { t: "Producción de reels", q: "reels" }, ASESOR]
     },
     {
@@ -201,7 +201,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     {
       id: "ads",
       kw: ["ads", "publicidad", "campana", "campanas", "pauta", "meta ads", "facebook ads", "anuncios", "pauta publicitaria", "performance"],
-      a: "🚀 Gestionamos <strong>campañas de Ads</strong> en Meta (Facebook / Instagram) para traer tráfico, leads y ventas. Vienen dentro de nuestros <strong>planes Redes + Ads desde S/ 2,990/mes</strong>, con community management y reporte mensual.<br><br>¿Te interesa escalar con publicidad?",
+      a: "🚀 Gestionamos <strong>campañas de Ads</strong> en Meta (Facebook / Instagram) para traer tráfico, leads y ventas. Vienen dentro de nuestros <strong>planes Redes + Ads desde S/ 3,990/mes</strong>, con community management y reporte mensual.<br><br>¿Te interesa escalar con publicidad?",
       c: [{ t: "Ver planes + Ads", q: "__link:/servicios" }, waChip("💬 Cotizar Ads", "Hola, me interesan los planes de redes + Ads de VISUAL Group.")]
     },
     {
